@@ -1,0 +1,39 @@
+// Simple line icons for the tab bar. Decorative: the label carries the meaning.
+const common = {
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: 'currentColor',
+  strokeWidth: 2,
+  strokeLinecap: 'square' as const,
+  'aria-hidden': true,
+  focusable: false,
+};
+
+export const IconHome = () => (
+  <svg {...common}>
+    <path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" />
+  </svg>
+);
+export const IconPlus = () => (
+  <svg {...common}>
+    <rect x="3" y="3" width="18" height="18" />
+    <path d="M12 8v8M8 12h8" />
+  </svg>
+);
+export const IconMap = () => (
+  <svg {...common}>
+    <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" />
+    <circle cx="12" cy="9.5" r="2.5" />
+  </svg>
+);
+export const IconRank = () => (
+  <svg {...common}>
+    <path d="M4 20V13h4v7M10 20V5h4v15M16 20v-9h4v9" />
+  </svg>
+);
+export const IconMine = () => (
+  <svg {...common}>
+    <circle cx="12" cy="8" r="4" />
+    <path d="M4 21c1.2-4 4.3-6 8-6s6.8 2 8 6" />
+  </svg>
+);

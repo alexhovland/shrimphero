@@ -1,0 +1,41 @@
+# Downloads the Lidl store list from OpenStreetMap and saves it as
+# supabase/seed/stores.csv in this repository. Run it by hand:
+# Actions tab > "Refresh Lidl stores" > Run workflow. Takes about 5 minutes.
+name: Refresh Lidl stores
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stores:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Download stores from OpenStreetMap
+        run: node scripts/fetch-stores.mjs
+
+      - name: Save the file in the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add supabase/seed/stores.csv
+          if git diff --cached --quiet; then
+            echo "The store list has not changed."
+          else
+            git commit -m "Refresh Lidl store list from OpenStreetMap"
+            git push
+          fi
+
+      - name: Also offer the file as a download on this run's page
+        uses: actions/upload-artifact@v4
+        with:
+          name: stores-csv
+          path: supabase/seed/stores.csv

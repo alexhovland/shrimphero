@@ -1,0 +1,74 @@
+# Builds the site and publishes it on GitHub Pages.
+# Runs on every change to the main branch, or by hand from the Actions tab.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    env:
+      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+      VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
+      BASE_PATH: ${{ vars.BASE_PATH }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check the three repository variables are set
+        run: |
+          missing=""
+          [ -z "$VITE_SUPABASE_URL" ] && missing="$missing VITE_SUPABASE_URL"
+          [ -z "$VITE_SUPABASE_ANON_KEY" ] && missing="$missing VITE_SUPABASE_ANON_KEY"
+          [ -z "$VITE_TURNSTILE_SITE_KEY" ] && missing="$missing VITE_TURNSTILE_SITE_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repository variables:$missing. Add them in Settings > Secrets and variables > Actions > Variables."
+            exit 1
+          fi
+          case "$VITE_SUPABASE_ANON_KEY" in
+            sb_secret_*|*service_role*)
+              echo "::error::VITE_SUPABASE_ANON_KEY looks like a secret key. Use the publishable (anon) key instead, and rotate the secret key in Supabase."
+              exit 1 ;;
+          esac
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Copy index.html to 404.html (so any wrong link still opens the app)
+        run: cp dist/index.html dist/404.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

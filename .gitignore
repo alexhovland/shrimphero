@@ -1,0 +1,8 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env
+.env.*
+# Fake local-test values only (no real keys), needed by the Playwright tests
+!.env.test
