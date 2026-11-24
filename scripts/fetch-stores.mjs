@@ -39,6 +39,8 @@ async function overpass(cc) {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'ShrimpHero store list (campaign site)' },
         body: new URLSearchParams({ data: query(cc) }),
+        // Give up on a stalled server after 6 minutes (the query itself allows 5) and try the next one.
+        signal: AbortSignal.timeout(360_000),
       });
       if (res.ok) return await res.json();
       lastError = new Error(`${url} answered ${res.status}`);
