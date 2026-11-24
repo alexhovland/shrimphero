@@ -169,6 +169,9 @@ export function StorePicker({ value, onChange, error }: { value: Store | null; o
         <a className="credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
           {t('footer.osm')}
         </a>
+        <a className="credit" href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">
+          © GeoNames
+        </a>
       </div>
     </div>
   );

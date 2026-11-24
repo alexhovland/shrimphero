@@ -23,6 +23,18 @@ jobs:
       - name: Download stores from OpenStreetMap
         run: node scripts/fetch-stores.mjs
 
+      - name: Add town and village names (GeoNames, CC BY 4.0)
+        run: |
+          mkdir -p "$RUNNER_TEMP/geonames"
+          for cc in FR DE IT PL ES GB IE BE CH AT; do
+            if curl -fsSL --retry 3 --max-time 300 -o "$RUNNER_TEMP/geonames/$cc.zip" "https://download.geonames.org/export/dump/$cc.zip"; then
+              unzip -o -q "$RUNNER_TEMP/geonames/$cc.zip" "$cc.txt" -d "$RUNNER_TEMP/geonames" || echo "::warning::Could not unzip $cc"
+            else
+              echo "::warning::Could not download GeoNames for $cc"
+            fi
+          done
+          GEONAMES_DIR="$RUNNER_TEMP/geonames" node scripts/add-places.mjs
+
       - name: Save the file in the repository
         run: |
           git config user.name "github-actions[bot]"

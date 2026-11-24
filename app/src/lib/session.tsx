@@ -58,7 +58,11 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const signIn = useCallback(async (captchaToken: string) => {
     const supabase = await getSupabase();
     const { data, error } = await supabase.auth.signInAnonymously({ options: { captchaToken } });
-    if (error) throw new Error('sign_in_failed');
+    if (error) {
+      // Supabase's own reason (for example "Anonymous sign-ins are disabled"), for whoever opens the console.
+      console.warn('Sign-in refused by Supabase:', error.code || '', error.message);
+      throw new Error('sign_in_failed');
+    }
     setSession(data.session);
   }, []);
 

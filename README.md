@@ -66,7 +66,7 @@ Where the brief was open, I picked the simplest safe option:
 - **Reporting needs a login.** Only someone who has logged stickers from that browser can report a nickname. This keeps the 20-reports-a-day limit meaningful without asking strangers to pass a robot check just to report.
 - **The robot check loads only when someone starts filling the Log form**, not when they open the site. Cloudflare sees visitors only when they log, as the privacy page says.
 - **Days follow Paris time** for the 7-day window and the daily limits. Someone in the UK logging just before midnight may find the oldest day refused.
-- **Store search** matches city, street, postcode and store name. A store with no city in OpenStreetMap can still be found by street or postcode, or with "Use my location".
+- **Store search** matches town, village, street, postcode and store name. `scripts/add-places.mjs` fills in missing towns from GeoNames and lists, for every store, the villages it is one of the 3 nearest Lidl shops for (within 20 km), so typing a village finds the nearest stores. "Use my location" also works.
 - **"Use my location"** sends the position rounded to about 1 km, and only to the store search. It is never stored.
 - **Leaderboard ties** are ordered by nickname.
 - **The Spanish interface offers the English sticker** by default, since there is no Spanish sticker.
@@ -116,4 +116,4 @@ Local development with a real project: create `app/.env.local` with `VITE_SUPABA
 
 ## Licences
 
-Code: MIT (see `LICENSE`). Fonts: Libre Franklin and Newsreader, SIL Open Font License 1.1, bundled through Fontsource. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Sticker images and campaign texts belong to the campaign.
+Code: MIT (see `LICENSE`). Fonts: Libre Franklin and Newsreader, SIL Open Font License 1.1, bundled through Fontsource. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Town and village names: © GeoNames, CC BY 4.0; the credit appears on the Log screen. Sticker images and campaign texts belong to the campaign.

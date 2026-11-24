@@ -23,8 +23,8 @@ begin
   delete from public.reports where reporter_id in (a, b, c);
   delete from public.entries where store_id = test_store;
   delete from public.stores where id = test_store;
-  insert into public.stores (id, name, street, city, postcode, country, lat, lng)
-  values (test_store, 'Lidl', 'Rue du Test 1', 'Testville', '00000', 'FR', 48.8566, 2.3522);
+  insert into public.stores (id, name, street, city, postcode, country, lat, lng, area)
+  values (test_store, 'Lidl', 'Rue du Test 1', 'Testville', '00000', 'FR', 48.8566, 2.3522, 'Petit-Testhameau, Autreville');
   select total_stickers into total_before from public.public_totals();
 
   ---------------------------------------------------------------- RLS and grants exist
@@ -94,6 +94,8 @@ begin
   perform * from public.impact_settings();
   select count(*) into n from public.search_stores('testville');
   if n < 1 then raise exception 'FAILED: store search does not find the test store'; end if;
+  select count(*) into n from public.search_stores('petit testhameau');
+  if n < 1 then raise exception 'FAILED: store search does not find a nearby village (run 007_store_places.sql)'; end if;
   select count(*) into n from public.nearby_stores(48.86, 2.35);
   if n < 1 then raise exception 'FAILED: nearby search does not find the test store'; end if;
 

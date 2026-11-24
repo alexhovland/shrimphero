@@ -77,7 +77,7 @@ A new Supabase account, separate from any you already have.
 **Database**
 
 - [ ] Left menu: **SQL Editor**. Click **+** (New query). Open `supabase/migrations/001_tables.sql` from the zip in a text editor, copy everything, paste it, and click **Run**. You should see "Success. No rows returned".
-- [ ] Do the same, in order, with `002_nicknames.sql`, `003_entries.sql`, `004_public_functions.sql`, `005_permissions.sql` and `006_settings_and_blocklist.sql`. One new query each.
+- [ ] Do the same, in order, with `002_nicknames.sql`, `003_entries.sql`, `004_public_functions.sql`, `005_permissions.sql`, `006_settings_and_blocklist.sql` and `007_store_places.sql`. One new query each.
 - [ ] Run `supabase/tests/security.sql` the same way. If Supabase warns about "destructive operations", click **Run this query**: the test deletes only its own test rows. The result must say **all checks passed**. If it shows an error starting with FAILED, stop and send me that message.
 - [ ] Left menu: **Advisors**, then **Security Advisor**. Click **Rerun linter** if offered. There must be no **Errors**. Warnings named "Anonymous Access Policies" are expected: every visitor here is anonymous on purpose.
 
