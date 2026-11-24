@@ -2,7 +2,7 @@
 // project name. Never put a private person's name or address here.
 export const PUBLISHER_NAME = 'ShrimpHero';
 // Edit before launch: the project's own contact address.
-export const CONTACT_EMAIL = '{{CONTACT_EMAIL}}';
+export const CONTACT_EMAIL = 'alexhovland@proton.me';
 // Optional postal address (for example a P.O. box). Leave empty to show none.
 export const PUBLISHER_ADDRESS = '';
 // The company that hosts the site. Change it if the site moves.
