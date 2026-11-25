@@ -31,9 +31,9 @@ export default function HowItWorks() {
         <h2>{t('how.why_title')}</h2>
         <p>{t('how.why_body')}</p>
 
-        <ol className="steps steps--detail">
+        <ol className="steps steps--detail steps--stickers">
           {STEPS.map((i) => (
-            <li key={i}>
+            <li key={i} className="sticker">
               <div>
                 <h3>{t(`how.step${i}_title`)}</h3>
                 <p aria-busy={i === 4 && !impact && !failed ? true : undefined}>

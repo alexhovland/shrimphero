@@ -15,9 +15,9 @@ export default function Stickers() {
       <div className="wrap--form">
         <h1 id="st-title">{t('stickers.title')}</h1>
         <p className="lead">{t('stickers.body')}</p>
-        <ol className="steps order-steps">
+        <ol className="steps order-steps steps--stickers">
           {STEPS.map((i) => (
-            <li key={i}>
+            <li key={i} className="sticker">
               <span>{t(`stickers.step${i}`)}</span>
             </li>
           ))}

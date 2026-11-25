@@ -56,7 +56,9 @@ export default function Home() {
       <Reveal className="block block--red" aria-labelledby="why-title">
         <div className="wrap">
           <h2 id="why-title">{t('home.why_title')}</h2>
-          <p>{t('home.why_body')}</p>
+          <div className="sticker">
+            <p>{t('home.why_body')}</p>
+          </div>
           <div className="actions">
             <a className="btn btn--light" href={petitionFor(lang)} target="_blank" rel="noopener noreferrer">
               {t('home.petition')}

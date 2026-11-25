@@ -150,6 +150,7 @@ a:hover {
   background: var(--red);
   color: var(--white);
   --focus: var(--yellow);
+  --sticker-bg: var(--red);
 }
 .block--ink {
   background: var(--ink);
@@ -1106,6 +1107,45 @@ a:hover {
   margin: var(--s6) 0 0;
   font-weight: 700;
 }
+/* ---------- Sticker cards ---------- */
+
+/* A white card that looks like a die-cut sticker: ink border, a white edge
+   around it (outline, not a shadow), a slight static tilt and a folded corner.
+   The side margin keeps the tilted card inside the screen at 320 px. */
+.sticker,
+.steps > li.sticker {
+  position: relative;
+  margin: 0 var(--s2) var(--s6);
+  padding: var(--s4) var(--s8) var(--s4) var(--s4);
+  background: var(--white);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  outline: 4px solid var(--white);
+  transform: rotate(-1.5deg);
+}
+.sticker:nth-child(3n + 2) {
+  transform: rotate(1deg);
+}
+.sticker:nth-child(3n) {
+  transform: rotate(-0.5deg);
+}
+/* Folded top-right corner: the cut-away half shows what is behind the card,
+   the other half is the folded flap. */
+.sticker::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  border-top: 24px solid var(--sticker-bg, var(--cream));
+  border-left: 24px solid #e6dfcf;
+}
+.sticker p:last-child {
+  margin-bottom: 0;
+}
+.steps--stickers {
+  margin-top: var(--s6);
+}
+
 /* ---------- Order stickers ---------- */
 
 .order-steps {
