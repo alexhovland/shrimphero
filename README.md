@@ -22,13 +22,14 @@ The step-by-step launch guide is in [LAUNCH-GUIDE.md](LAUNCH-GUIDE.md). This fil
 | `supabase/local/` | Only for developers testing on their own computer. Never run it in Supabase. |
 | `scripts/fetch-stores.mjs` | Downloads Lidl stores from OpenStreetMap and writes `stores.csv`. |
 | `scripts/clean-svg.mjs` | Cleans an SVG (removes metadata and editor data) before you add it to the site. |
+| `app/scripts/share-images.mjs` | Renders the sharing preview (`app/public/og.png`) and the phone home-screen icon (`app/public/apple-touch-icon.png`) from the site's font and mascot. |
 | `.github/workflows/` | Two automatic jobs on GitHub: publish the site, and refresh the store list. |
 | `SETUP/` | Visible copies of the two workflow files, because web uploads often skip hidden folders. |
 | `screenshots/` (next to this folder in the zip) | Every screen at 390 px and 1280 px wide, made with test data. |
 
 ## How it works
 
-**Screens.** Home (totals, mascot, why, buttons), Log stickers, Map, Leaderboard, My stickers, Get stickers, How we count (About), and Privacy and imprint. The phone layout has a tab bar at the bottom; from 768 px wide the menu moves to the top.
+**Screens.** Home (totals, mascot, why, buttons), How it works (steps and questions, with How we count at the end; `#/about` opens that part), Log stickers, Map and ranking on one page (`#/leaderboard` opens the ranking), My stickers (with simple goals), Get stickers (ordering through an outside form), and Privacy and imprint. The phone layout has a tab bar with five tabs at the bottom; from 1024 px wide the menu moves to the top.
 
 **Accounts.** There is no login screen. The first time someone saves stickers, the site runs Cloudflare's robot check and signs them in to Supabase anonymously. That anonymous login lives in their browser. They pick a nickname in the same form. If they clear the browser or lose the phone, their entries and nickname stay on the leaderboard, but they can't edit them any more. `app/src/lib/session.tsx` notes where "save my progress with email" can be added later; email sign-ups stay off until then.
 
