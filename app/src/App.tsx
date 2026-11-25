@@ -11,12 +11,14 @@ import Leaderboard from './screens/Leaderboard';
 import Mine from './screens/Mine';
 import Stickers from './screens/Stickers';
 import About from './screens/About';
+import HowItWorks from './screens/HowItWorks';
 import Privacy from './screens/Privacy';
 import MapScreen from './screens/MapScreen';
 // MapScreen loads the large map library (MapLibre) on its own, only when opened.
 
 const SCREENS: Record<Route, { C: React.ComponentType; title: string }> = {
   '/': { C: Home, title: '' },
+  '/how': { C: HowItWorks, title: 'how.title' },
   '/log': { C: Log, title: 'log.title' },
   '/map': { C: MapScreen, title: 'map.title' },
   '/leaderboard': { C: Leaderboard, title: 'leaderboard.title' },

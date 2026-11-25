@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "log": "Eintragen", "map": "Karte", "leaderboard": "Rangliste", "me": "Meine", "menu": "Hauptmenü" },
+  "nav": { "home": "Start", "how": "So funktioniert's", "log": "Eintragen", "map": "Karte", "leaderboard": "Rangliste", "me": "Meine", "menu": "Hauptmenü" },
   "header": { "language": "Sprache", "skip": "Zum Inhalt", "home": "ShrimpHero, Startseite" },
   "home": {
     "title": "Ein Aufkleber auf jede Garnelen­packung bei Lidl",
@@ -14,7 +14,36 @@
     "how_title": "So geht's",
     "step1": "Aufkleber herunterladen und drucken.",
     "step2": "Bei Lidl auf eine Garnelenpackung kleben.",
-    "step3": "Hier eintragen. Deine Aufkleber erscheinen auf der Karte."
+    "step3": "Hier eintragen. Deine Aufkleber erscheinen auf der Karte.",
+    "how_more": "Alle Schritte und Fragen"
+  },
+  "how": {
+    "title": "So funktioniert's",
+    "lead": "Kleine Aktion, große Wirkung.",
+    "why_title": "Warum funktioniert das?",
+    "why_body": "Ein Sticker auf einer Garnelenpackung spricht jede Person an, die sie in die Hand nimmt. Er zeigt ihnen und Lidl, dass Kundinnen und Kunden wichtig ist, wie diese Garnelen gezüchtet und getötet werden. Auch das Personal sieht die Sticker und spricht darüber, so erreicht die Botschaft die Menschen im Unternehmen. Es ist ein friedlicher Weg, Lidl um mehr Schutz für Garnelen zu bitten.",
+    "step1_title": "Hol dir Sticker",
+    "step1_body": "Lade den Sticker in deiner Sprache hier herunter und drucke ihn aus. Nimm ablösbares Stickerpapier.",
+    "step2_title": "Geh in einen Lidl in deiner Nähe",
+    "step2_body": "Geh zur Kühltheke mit Fisch und Meeresfrüchten und such die Zuchtgarnelen. Sie tragen oft das ASC-Logo.",
+    "step3_title": "Bring deine Sticker an",
+    "step3_body": "Kleb sie vorne auf die Packungen. Verdecke nie den Preis, das Haltbarkeitsdatum, die Zutaten oder die Allergene. Öffne und beschädige nichts.",
+    "step4_title": "Melde deine Aktion",
+    "step4_body": "Sag uns, wie viele Sticker du angebracht hast, und wähle deine Lidl-Filiale auf der Karte. Kein Konto nötig, nur ein Spitzname. Jeder Sticker = etwa {N} Garnelen pro Jahr geholfen.",
+    "step4_link": "So rechnen wir",
+    "step5_title": "Freu dich",
+    "step5_body": "Du hast dich gerade für das Wohl von Garnelen eingesetzt. Du bewirkst wirklich etwas.",
+    "faq_title": "Häufige Fragen",
+    "faq1_q": "Ist das erlaubt?",
+    "faq1_a": "Du stiehlst nichts, öffnest nichts und beschädigst nichts. Du bringst einen ablösbaren Sticker an, der keine Produktinformation verdeckt. Die Regeln sind von Land zu Land verschieden, und der Markt kann dich jederzeit bitten aufzuhören oder zu gehen. Bleib ruhig, respektvoll und folge den Bitten des Personals.",
+    "faq2_q": "Was, wenn Personal oder ein Sicherheitsdienst auf mich zukommt?",
+    "faq2_a": "Bleib ruhig und höflich. Sag zum Beispiel: „Wir beschädigen kein Produkt. Wir sind eine Bürgergruppe, die ihre Sorge darüber ausdrückt, wie Lidls Garnelen behandelt werden.\" Dann verlass den Markt. Diskutiere nicht und leiste nie Widerstand.",
+    "faq3_q": "Wie hilft ein Sticker den Garnelen?",
+    "faq3_a": "Kundinnen und Kunden lesen ihn vor dem Kauf, und das Personal sieht ihn beim Einräumen. Jeder Sticker ist ein kleines, sichtbares Zeichen, dass die Kundschaft will, dass Lidl ändert, wie seine Garnelen gezüchtet und getötet werden.",
+    "faq4_q": "Kann ich das auch in anderen Läden machen?",
+    "faq4_a": "Diese Kampagne richtet sich an Lidl. Bitte bring Sticker nur in Lidl-Filialen an, damit die Botschaft klar bleibt.",
+    "faq5_q": "Wie viele Sticker soll ich anbringen?",
+    "faq5_a": "So viele, wie du dich traust. Schon ein einziger Sticker macht einen Unterschied."
   },
   "log": {
     "title": "Aufkleber eintragen",
@@ -119,7 +148,9 @@
     "sources": "Quellen",
     "source_europe": "Rethink Priorities: Zahl der Garnelen in großen europäischen Märkten (2026)",
     "source_germany": "Rethink Priorities: Garnelen im deutschen Einzelhandel (2026)",
-    "credits": "Filialstandorte © OpenStreetMap-Mitwirkende. Karte von OpenFreeMap, © OpenMapTiles."
+    "credits": "Filialstandorte © OpenStreetMap-Mitwirkende. Karte von OpenFreeMap, © OpenMapTiles.",
+    "steps": "Schritt für Schritt: Wenn Lidl sich verpflichtet, deckt diese Zusage etwa {s} Garnelen pro Jahr ab. Wir schätzen, dass die Kampagne dafür {n} Aufkleber braucht, und rechnen Aktionen in Filialen wie Aufklebern {X} % des Erfolgs zu. Ein Aufkleber hilft also {s} × {X} % ÷ {n} = etwa {per} Garnelen pro Jahr.",
+    "closing": "Aktionen im Laden wie unsere sind wirkungsvoll, aber sie sind nur ein Teil einer größeren Bewegung. Wir schätzen, dass sie etwa {X} % zum Erfolg der Kampagne beitragen. Das heißt, jeder Sticker hilft im Schnitt etwa {N} Garnelen pro Jahr. Jeder Sticker zählt!"
   },
   "privacy": {
     "title": "Datenschutz und Impressum",

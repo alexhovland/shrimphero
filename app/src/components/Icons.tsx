@@ -14,6 +14,12 @@ export const IconHome = () => (
     <path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" />
   </svg>
 );
+export const IconHow = () => (
+  <svg {...common}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.5V14M12 17.2v.3" />
+  </svg>
+);
 export const IconPlus = () => (
   <svg {...common}>
     <rect x="3" y="3" width="18" height="18" />

@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Inicio", "log": "Registrar", "map": "Mapa", "leaderboard": "Ranking", "me": "Las mías", "menu": "Menú principal" },
+  "nav": { "home": "Inicio", "how": "Cómo funciona", "log": "Registrar", "map": "Mapa", "leaderboard": "Ranking", "me": "Las mías", "menu": "Menú principal" },
   "header": { "language": "Idioma", "skip": "Ir al contenido", "home": "ShrimpHero, inicio" },
   "home": {
     "title": "Una pegatina en cada caja de gambas de Lidl",
@@ -14,7 +14,36 @@
     "how_title": "Cómo funciona",
     "step1": "Descarga la pegatina e imprímela.",
     "step2": "Pégala en una caja de gambas en Lidl.",
-    "step3": "Regístrala aquí. Tus pegatinas aparecen en el mapa."
+    "step3": "Regístrala aquí. Tus pegatinas aparecen en el mapa.",
+    "how_more": "Todos los pasos y las preguntas"
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "lead": "Gestos simples, gran impacto.",
+    "why_title": "¿Por qué funciona?",
+    "why_body": "Una pegatina en una caja de gambas le habla a cada cliente que la coge. Les dice, a ellos y a Lidl, que a los clientes les importa cómo se crían y se matan estas gambas. El personal de la tienda también ve las pegatinas y habla de ellas, así el mensaje llega a la gente dentro de la empresa. Es una forma pacífica de pedirle a Lidl que lo haga mejor con las gambas.",
+    "step1_title": "Consigue tus pegatinas",
+    "step1_body": "Descarga e imprime desde esta web la pegatina en tu idioma. Usa papel adhesivo removible.",
+    "step2_title": "Ve a un Lidl cerca de ti",
+    "step2_body": "Ve a la sección de pescado y marisco refrigerado y busca las gambas de criadero. Suelen llevar el logo ASC.",
+    "step3_title": "Pon tus pegatinas",
+    "step3_body": "Pégalas en la parte de delante de las cajas. Nunca tapes el precio, la fecha de caducidad, los ingredientes ni los alérgenos. No abras ni dañes nada.",
+    "step4_title": "Registra tu acción",
+    "step4_body": "Dinos cuántas pegatinas pusiste y elige tu tienda Lidl en el mapa. Sin cuenta, solo un apodo. Cada pegatina = unas {N} gambas ayudadas al año.",
+    "step4_link": "Cómo lo calculamos",
+    "step5_title": "Siéntete bien",
+    "step5_body": "Acabas de actuar por el bienestar de las gambas. Estás marcando una diferencia real.",
+    "faq_title": "Preguntas frecuentes",
+    "faq1_q": "¿Está permitido?",
+    "faq1_a": "No robas, no abres ni dañas nada. Añades una pegatina removible que no tapa ninguna información del producto. Las normas cambian de un país a otro y la tienda siempre puede pedirte que pares o que te vayas. Mantén la calma, sé respetuoso y haz lo que te pida el personal.",
+    "faq2_q": "¿Y si se me acerca el personal o un guardia de seguridad?",
+    "faq2_a": "Mantén la calma y sé educado. Di algo como: \"No estamos dañando ningún producto. Somos un grupo de ciudadanos que expresa su preocupación por cómo Lidl trata a sus gambas.\" Luego sal de la tienda. Nunca discutas ni te resistas.",
+    "faq3_q": "¿Cómo ayuda una pegatina a las gambas?",
+    "faq3_a": "Los clientes la leen antes de comprar, y el personal la ve al reponer. Cada pegatina es una señal pequeña y visible de que los clientes quieren que Lidl cambie cómo se crían y se matan sus gambas.",
+    "faq4_q": "¿Puedo hacerlo en otras tiendas?",
+    "faq4_a": "Esta campaña es sobre Lidl. Pon pegatinas solo en tiendas Lidl para que el mensaje quede claro.",
+    "faq5_q": "¿Cuántas pegatinas debo poner?",
+    "faq5_a": "Las que te sientas cómodo poniendo. Incluso una sola marca la diferencia."
   },
   "log": {
     "title": "Registra tus pegatinas",
@@ -119,7 +148,9 @@
     "sources": "Fuentes",
     "source_europe": "Rethink Priorities: el número de gambas en los grandes mercados europeos (2026)",
     "source_germany": "Rethink Priorities: las gambas en la distribución alemana (2026)",
-    "credits": "Ubicación de las tiendas © colaboradores de OpenStreetMap. Mapa de OpenFreeMap, © OpenMapTiles."
+    "credits": "Ubicación de las tiendas © colaboradores de OpenStreetMap. Mapa de OpenFreeMap, © OpenMapTiles.",
+    "steps": "Paso a paso: si Lidl se compromete, su promesa cubriría unas {s} gambas al año. Estimamos que la campaña necesita {n} pegatinas para lograrlo, y atribuimos el {X} % del éxito a las acciones en tienda como las pegatinas. Así, cada pegatina ayuda a {s} × {X} % ÷ {n} = unas {per} gambas al año.",
+    "closing": "Las acciones en tienda como las nuestras son potentes, pero son solo una parte de un movimiento más grande. Estimamos que suponen cerca del {X} % del éxito de la campaña. Eso significa que cada pegatina ayuda, de media, a unas {N} gambas al año. ¡Cada pegatina cuenta!"
   },
   "privacy": {
     "title": "Privacidad y aviso legal",

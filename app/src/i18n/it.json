@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "log": "Registra", "map": "Mappa", "leaderboard": "Classifica", "me": "I miei", "menu": "Menu principale" },
+  "nav": { "home": "Home", "how": "Come funziona", "log": "Registra", "map": "Mappa", "leaderboard": "Classifica", "me": "I miei", "menu": "Menu principale" },
   "header": { "language": "Lingua", "skip": "Vai al contenuto", "home": "ShrimpHero, home" },
   "home": {
     "title": "Un adesivo su ogni confezione di gamberetti Lidl",
@@ -14,7 +14,36 @@
     "how_title": "Come funziona",
     "step1": "Scarica l'adesivo e stampalo.",
     "step2": "Attaccalo su una confezione di gamberetti da Lidl.",
-    "step3": "Registralo qui. I tuoi adesivi compaiono sulla mappa."
+    "step3": "Registralo qui. I tuoi adesivi compaiono sulla mappa.",
+    "how_more": "Tutti i passi e le domande"
+  },
+  "how": {
+    "title": "Come funziona",
+    "lead": "Gesti semplici, grande impatto.",
+    "why_title": "Perché funziona?",
+    "why_body": "Un adesivo su una confezione di gamberi parla a ogni cliente che la prende in mano. Dice a loro, e a Lidl, che ai clienti importa come questi gamberi vengono allevati e uccisi. Anche il personale del negozio vede gli adesivi e ne parla, così il messaggio arriva alle persone dentro l'azienda. È un modo pacifico per chiedere a Lidl di fare meglio per i gamberi.",
+    "step1_title": "Procurati gli adesivi",
+    "step1_body": "Scarica e stampa da questo sito l'adesivo nella tua lingua. Usa carta adesiva removibile.",
+    "step2_title": "Vai in un Lidl vicino a te",
+    "step2_body": "Vai al banco frigo di pesce e frutti di mare e cerca i gamberi d'allevamento. Spesso hanno il logo ASC.",
+    "step3_title": "Attacca gli adesivi",
+    "step3_body": "Mettili sul davanti delle confezioni. Non coprire mai il prezzo, la data di scadenza, gli ingredienti o gli allergeni. Non aprire e non rovinare niente.",
+    "step4_title": "Segnala la tua azione",
+    "step4_body": "Dicci quanti adesivi hai attaccato e scegli il tuo negozio Lidl sulla mappa. Nessun account, basta un nickname. Ogni adesivo = circa {N} gamberi aiutati all'anno.",
+    "step4_link": "Come calcoliamo",
+    "step5_title": "Sentiti bene",
+    "step5_body": "Hai appena fatto qualcosa per il benessere dei gamberi. Stai facendo davvero la differenza.",
+    "faq_title": "Domande frequenti",
+    "faq1_q": "È permesso?",
+    "faq1_a": "Non rubi, non apri e non rovini niente. Aggiungi un adesivo removibile che non copre nessuna informazione sul prodotto. Le regole cambiano da paese a paese e il negozio può sempre chiederti di smettere o di andartene. Resta calmo, sii rispettoso e segui quello che ti chiede il personale.",
+    "faq2_q": "E se il personale o una guardia di sicurezza viene da me?",
+    "faq2_a": "Resta calmo ed educato. Di' per esempio: \"Non stiamo danneggiando nessun prodotto. Siamo un gruppo di cittadini che esprime la propria preoccupazione per come vengono trattati i gamberi di Lidl.\" Poi esci dal negozio. Non discutere e non opporti mai.",
+    "faq3_q": "Come fa un adesivo ad aiutare i gamberi?",
+    "faq3_a": "I clienti lo leggono prima di comprare e il personale lo vede mentre riempie gli scaffali. Ogni adesivo è un piccolo segno visibile che i clienti vogliono che Lidl cambi il modo in cui i suoi gamberi vengono allevati e uccisi.",
+    "faq4_q": "Posso farlo in altri negozi?",
+    "faq4_a": "Questa campagna riguarda Lidl. Attacca gli adesivi solo nei negozi Lidl, così il messaggio resta chiaro.",
+    "faq5_q": "Quanti adesivi devo attaccare?",
+    "faq5_a": "Quanti te la senti. Anche un solo adesivo fa la differenza."
   },
   "log": {
     "title": "Registra i tuoi adesivi",
@@ -119,7 +148,9 @@
     "sources": "Fonti",
     "source_europe": "Rethink Priorities: il numero di gamberetti nei principali mercati europei (2026)",
     "source_germany": "Rethink Priorities: i gamberetti nella grande distribuzione tedesca (2026)",
-    "credits": "Posizioni dei negozi © contributori di OpenStreetMap. Mappa di OpenFreeMap, © OpenMapTiles."
+    "credits": "Posizioni dei negozi © contributori di OpenStreetMap. Mappa di OpenFreeMap, © OpenMapTiles.",
+    "steps": "Passo per passo: se Lidl si impegna, la sua promessa coprirebbe circa {s} gamberetti all'anno. Stimiamo che alla campagna servano {n} adesivi per arrivarci, e attribuiamo alle azioni nei negozi, come gli adesivi, il {X}% del successo. Quindi un adesivo aiuta {s} × {X}% ÷ {n} = circa {per} gamberetti all'anno.",
+    "closing": "Le azioni nei negozi come le nostre sono potenti, ma sono solo una parte di un movimento più grande. Stimiamo che contino per circa il {X}% del successo della campagna. Vuol dire che ogni adesivo aiuta in media circa {N} gamberi all'anno. Ogni adesivo conta!"
   },
   "privacy": {
     "title": "Privacy e note legali",

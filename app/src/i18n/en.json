@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "log": "Log", "map": "Map", "leaderboard": "Ranking", "me": "Mine", "menu": "Main menu" },
+  "nav": { "home": "Home", "how": "How it works", "log": "Log", "map": "Map", "leaderboard": "Ranking", "me": "Mine", "menu": "Main menu" },
   "header": { "language": "Language", "skip": "Skip to content", "home": "ShrimpHero, home" },
   "home": {
     "title": "A sticker on every Lidl shrimp box",
@@ -14,7 +14,36 @@
     "how_title": "How it works",
     "step1": "Download the sticker and print it.",
     "step2": "Stick it on a shrimp box at Lidl.",
-    "step3": "Log it here. Your stickers show up on the map."
+    "step3": "Log it here. Your stickers show up on the map.",
+    "how_more": "All the steps and questions"
+  },
+  "how": {
+    "title": "How it works",
+    "lead": "Simple actions, big impact.",
+    "why_title": "Why does this work?",
+    "why_body": "A sticker on a shrimp box speaks to every shopper who picks it up. It tells them, and Lidl, that customers care about how these shrimp are farmed and killed. Store staff also see the stickers and talk about them, so the message reaches the people inside the company. It's a peaceful way to ask Lidl to do better for shrimp.",
+    "step1_title": "Get your stickers",
+    "step1_body": "Download and print the sticker in your language from this site. Use removable sticker paper.",
+    "step2_title": "Visit a Lidl near you",
+    "step2_body": "Go to the chilled fish and seafood section and find the farmed shrimp. They often carry an ASC logo.",
+    "step3_title": "Place your stickers",
+    "step3_body": "Stick them on the front of the boxes. Never cover the price, the expiry date, the ingredients or the allergy information. Don't open or damage anything.",
+    "step4_title": "Report your action",
+    "step4_body": "Tell us how many stickers you placed and pick your Lidl store on the map. No account needed, just a nickname. Every sticker = about {N} shrimp helped per year.",
+    "step4_link": "How we calculate",
+    "step5_title": "Feel good",
+    "step5_body": "You just stood up for shrimp welfare. You're making a real difference.",
+    "faq_title": "Frequently asked questions",
+    "faq1_q": "Is this allowed?",
+    "faq1_a": "You're not stealing, opening or damaging anything. You're adding a removable sticker that doesn't cover any product information. Rules differ from country to country and the store can always ask you to stop or leave. Stay calm, be respectful, and follow what staff ask.",
+    "faq2_q": "What if staff or a security guard comes to me?",
+    "faq2_a": "Stay calm and polite. Say something like: \"We're not harming any product. We're a citizen group sharing our concern about how Lidl's shrimp are treated.\" Then leave the store. Never argue or resist.",
+    "faq3_q": "How does a sticker help shrimp?",
+    "faq3_a": "Shoppers read it before they buy, and staff see it when they stock the shelves. Each sticker is a small, visible sign that customers want Lidl to change how its shrimp are farmed and killed.",
+    "faq4_q": "Can I do this in other stores?",
+    "faq4_a": "This campaign is about Lidl. Please only place stickers in Lidl stores so the message stays clear.",
+    "faq5_q": "How many stickers should I place?",
+    "faq5_a": "As many as you feel comfortable with. Even one sticker makes a difference."
   },
   "log": {
     "title": "Log your stickers",
@@ -119,7 +148,9 @@
     "sources": "Sources",
     "source_europe": "Rethink Priorities: the number of shrimp in major European markets (2026)",
     "source_germany": "Rethink Priorities: shrimp in the German retail market (2026)",
-    "credits": "Store locations © OpenStreetMap contributors. Map by OpenFreeMap, © OpenMapTiles."
+    "credits": "Store locations © OpenStreetMap contributors. Map by OpenFreeMap, © OpenMapTiles.",
+    "steps": "Step by step: if Lidl commits, its promise would cover about {s} shrimp a year. We estimate the campaign needs {n} stickers to get there, and we give store actions like stickers {X}% of the credit for the success. So one sticker helps {s} × {X}% ÷ {n} = about {per} shrimp a year.",
+    "closing": "Store actions like ours are powerful, but they're one part of a larger movement. We estimate they account for about {X}% of the campaign's success. That means each sticker helps about {N} shrimp per year, on average. Every sticker counts!"
   },
   "privacy": {
     "title": "Privacy and imprint",

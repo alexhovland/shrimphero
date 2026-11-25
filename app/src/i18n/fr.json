@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Accueil", "log": "Déclarer", "map": "Carte", "leaderboard": "Classement", "me": "Les miens", "menu": "Menu principal" },
+  "nav": { "home": "Accueil", "how": "Comment ça marche", "log": "Déclarer", "map": "Carte", "leaderboard": "Classement", "me": "Les miens", "menu": "Menu principal" },
   "header": { "language": "Langue", "skip": "Aller au contenu", "home": "ShrimpHero, accueil" },
   "home": {
     "title": "Un autocollant sur chaque boîte de crevettes Lidl",
@@ -14,7 +14,36 @@
     "how_title": "Comment ça marche",
     "step1": "Téléchargez l'autocollant et imprimez-le.",
     "step2": "Collez-le sur une boîte de crevettes chez Lidl.",
-    "step3": "Déclarez-le ici. Vos autocollants apparaissent sur la carte."
+    "step3": "Déclarez-le ici. Vos autocollants apparaissent sur la carte.",
+    "how_more": "Toutes les étapes et les questions"
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "lead": "Des gestes simples, un grand impact.",
+    "why_title": "Pourquoi ça marche ?",
+    "why_body": "Un autocollant sur une boîte de crevettes parle à chaque client qui la prend en main. Il leur dit, à eux et à Lidl, que les clients se soucient de la façon dont ces crevettes sont élevées et tuées. Le personnel du magasin voit aussi les autocollants et en parle, et le message remonte ainsi jusqu'à l'intérieur de l'entreprise. C'est une façon pacifique de demander à Lidl de mieux faire pour les crevettes.",
+    "step1_title": "Procurez-vous des autocollants",
+    "step1_body": "Téléchargez et imprimez l'autocollant dans votre langue sur ce site. Utilisez du papier autocollant repositionnable.",
+    "step2_title": "Allez dans un Lidl près de chez vous",
+    "step2_body": "Rendez-vous au rayon frais poissons et fruits de mer et cherchez les crevettes d'élevage. Elles portent souvent le logo ASC.",
+    "step3_title": "Posez vos autocollants",
+    "step3_body": "Collez-les sur le devant des boîtes. Ne couvrez jamais le prix, la date limite, les ingrédients ni les allergènes. N'ouvrez et n'abîmez rien.",
+    "step4_title": "Déclarez votre action",
+    "step4_body": "Indiquez combien d'autocollants vous avez posés et choisissez votre magasin Lidl sur la carte. Pas besoin de compte, juste un pseudo. Chaque autocollant = environ {N} crevettes aidées par an.",
+    "step4_link": "Comment on calcule",
+    "step5_title": "Soyez fier·e de vous",
+    "step5_body": "Vous venez d'agir pour le bien-être des crevettes. Vous faites une vraie différence.",
+    "faq_title": "Questions fréquentes",
+    "faq1_q": "Est-ce autorisé ?",
+    "faq1_a": "Vous ne volez, n'ouvrez et n'abîmez rien. Vous ajoutez un autocollant repositionnable qui ne cache aucune information sur le produit. Les règles varient d'un pays à l'autre et le magasin peut toujours vous demander d'arrêter ou de partir. Restez calme, respectueux·se, et suivez ce que le personnel vous demande.",
+    "faq2_q": "Et si le personnel ou un agent de sécurité vient me voir ?",
+    "faq2_a": "Restez calme et poli·e. Dites par exemple : « Nous n'abîmons aucun produit. Nous sommes un groupe de citoyens qui exprime son inquiétude sur la façon dont les crevettes de Lidl sont traitées. » Puis quittez le magasin. Ne discutez pas et ne résistez jamais.",
+    "faq3_q": "Comment un autocollant aide-t-il les crevettes ?",
+    "faq3_a": "Les clients le lisent avant d'acheter, et le personnel le voit en remplissant les rayons. Chaque autocollant est un petit signe visible que les clients veulent que Lidl change la façon dont ses crevettes sont élevées et tuées.",
+    "faq4_q": "Puis-je le faire dans d'autres magasins ?",
+    "faq4_a": "Cette campagne concerne Lidl. Merci de ne poser des autocollants que dans les magasins Lidl, pour que le message reste clair.",
+    "faq5_q": "Combien d'autocollants dois-je poser ?",
+    "faq5_a": "Autant que vous le souhaitez. Même un seul autocollant fait la différence."
   },
   "log": {
     "title": "Déclarer vos autocollants",
@@ -119,7 +148,9 @@
     "sources": "Sources",
     "source_europe": "Rethink Priorities : le nombre de crevettes sur les grands marchés européens (2026)",
     "source_germany": "Rethink Priorities : les crevettes dans la grande distribution allemande (2026)",
-    "credits": "Emplacements des magasins © les contributeurs d'OpenStreetMap. Carte OpenFreeMap, © OpenMapTiles."
+    "credits": "Emplacements des magasins © les contributeurs d'OpenStreetMap. Carte OpenFreeMap, © OpenMapTiles.",
+    "steps": "Étape par étape : si Lidl s'engage, sa promesse couvrirait environ {s} crevettes par an. Nous estimons que la campagne a besoin de {n} autocollants pour y arriver, et nous attribuons {X} % du succès aux actions en magasin comme les autocollants. Un autocollant aide donc {s} × {X} % ÷ {n} = environ {per} crevettes par an.",
+    "closing": "Les actions en magasin comme les nôtres sont puissantes, mais elles ne sont qu'une partie d'un mouvement plus large. Nous estimons qu'elles représentent environ {X} % du succès de la campagne. Cela veut dire que chaque autocollant aide en moyenne environ {N} crevettes par an. Chaque autocollant compte !"
   },
   "privacy": {
     "title": "Confidentialité et mentions légales",

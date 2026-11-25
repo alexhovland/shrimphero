@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useI18n } from '../i18n';
 import { getImpact, type Impact } from '../lib/api';
-import { formatNumber } from '../lib/format';
+import { impactVars } from '../lib/impact';
 import { SOURCES } from '../site-config';
 
 export default function About() {
@@ -13,12 +13,8 @@ export default function About() {
     getImpact().then(setImpact).catch(() => setFailed(true));
   }, []);
 
-  const exact = (n: number) => new Intl.NumberFormat(lang, { maximumFractionDigits: 4 }).format(n);
-  // Placeholders keep the layout steady until the numbers arrive from the database.
-  const dash = failed ? '–' : '…';
-  const v = impact
-    ? { s: formatNumber(impact.s, lang), p: exact(impact.p), n: formatNumber(impact.n, lang), per: exact(impact.per_sticker) }
-    : { s: dash, p: dash, n: dash, per: dash };
+  // Placeholders ("…") keep the layout steady until the numbers arrive from the database.
+  const v = impactVars(impact, lang, failed);
 
   return (
     <section className="block block--cream prose" aria-labelledby="about-title">
@@ -39,6 +35,7 @@ export default function About() {
             <li>{t('about.p', { p: v.p })}</li>
             <li>{t('about.n', { n: v.n })}</li>
         </ul>
+        <p aria-busy={!impact && !failed}>{t('about.steps', v)}</p>
         <h2>{t('about.sources')}</h2>
         <ul>
           <li>
@@ -55,6 +52,7 @@ export default function About() {
           </li>
         </ul>
         <p className="credit">{t('about.credits')}</p>
+        <p className="closing" aria-busy={!impact && !failed}>{t('about.closing', v)}</p>
       </div>
     </section>
   );

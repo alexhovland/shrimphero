@@ -82,6 +82,9 @@ export default function Home() {
               </span>
             </li>
           </ol>
+          <p className="how-more">
+            <a href={href('/how')}>{t('home.how_more')}</a>
+          </p>
         </div>
       </Reveal>
     </>

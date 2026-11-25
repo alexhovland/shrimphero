@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "log": "Dodaj", "map": "Mapa", "leaderboard": "Ranking", "me": "Moje", "menu": "Menu główne" },
+  "nav": { "home": "Start", "how": "Jak to działa", "log": "Dodaj", "map": "Mapa", "leaderboard": "Ranking", "me": "Moje", "menu": "Menu główne" },
   "header": { "language": "Język", "skip": "Przejdź do treści", "home": "ShrimpHero, strona główna" },
   "home": {
     "title": "Naklejka na każdym opakowaniu krewetek w Lidlu",
@@ -14,7 +14,36 @@
     "how_title": "Jak to działa",
     "step1": "Pobierz naklejkę i ją wydrukuj.",
     "step2": "Naklej ją na opakowanie krewetek w Lidlu.",
-    "step3": "Zapisz to tutaj. Twoje naklejki pojawią się na mapie."
+    "step3": "Zapisz to tutaj. Twoje naklejki pojawią się na mapie.",
+    "how_more": "Wszystkie kroki i pytania"
+  },
+  "how": {
+    "title": "Jak to działa",
+    "lead": "Proste działania, duży wpływ.",
+    "why_title": "Dlaczego to działa?",
+    "why_body": "Naklejka na opakowaniu krewetek mówi do każdej osoby, która je podniesie. Pokazuje jej i Lidlowi, że klientom zależy na tym, jak te krewetki są hodowane i zabijane. Pracownicy sklepu też widzą naklejki i o nich rozmawiają, więc przekaz trafia do ludzi wewnątrz firmy. To pokojowy sposób, by poprosić Lidla o lepsze traktowanie krewetek.",
+    "step1_title": "Zdobądź naklejki",
+    "step1_body": "Pobierz i wydrukuj z tej strony naklejkę w swoim języku. Użyj papieru z klejem odklejanym.",
+    "step2_title": "Idź do Lidla w pobliżu",
+    "step2_body": "Podejdź do lodówek z rybami i owocami morza i znajdź krewetki hodowlane. Często mają logo ASC.",
+    "step3_title": "Przyklej naklejki",
+    "step3_body": "Naklej je z przodu opakowań. Nigdy nie zasłaniaj ceny, daty ważności, składu ani alergenów. Niczego nie otwieraj i nie niszcz.",
+    "step4_title": "Zgłoś swoją akcję",
+    "step4_body": "Napisz, ile naklejek przykleiłeś/-aś, i wybierz swój sklep Lidl na mapie. Bez konta, wystarczy pseudonim. Każda naklejka = około {N} krewetek, którym pomagasz rocznie.",
+    "step4_link": "Jak liczymy",
+    "step5_title": "Ciesz się",
+    "step5_body": "Właśnie stanąłeś/-ęłaś w obronie dobrostanu krewetek. Naprawdę coś zmieniasz.",
+    "faq_title": "Najczęstsze pytania",
+    "faq1_q": "Czy to dozwolone?",
+    "faq1_a": "Niczego nie kradniesz, nie otwierasz ani nie niszczysz. Dodajesz odklejaną naklejkę, która nie zasłania żadnych informacji o produkcie. Przepisy różnią się w zależności od kraju, a sklep zawsze może poprosić cię, żebyś przestał/-a albo wyszedł/wyszła. Zachowaj spokój, bądź uprzejmy/-a i stosuj się do próśb personelu.",
+    "faq2_q": "Co jeśli podejdzie do mnie pracownik albo ochroniarz?",
+    "faq2_a": "Zachowaj spokój i bądź uprzejmy/-a. Powiedz na przykład: „Nie niszczymy żadnego produktu. Jesteśmy grupą obywateli, którzy wyrażają swój niepokój tym, jak Lidl traktuje krewetki.\" Potem wyjdź ze sklepu. Nigdy się nie kłóć i nie stawiaj oporu.",
+    "faq3_q": "Jak naklejka pomaga krewetkom?",
+    "faq3_a": "Klienci czytają ją przed zakupem, a personel widzi ją przy wykładaniu towaru. Każda naklejka to mały, widoczny znak, że klienci chcą, by Lidl zmienił sposób hodowli i zabijania krewetek.",
+    "faq4_q": "Czy mogę to robić w innych sklepach?",
+    "faq4_a": "Ta kampania dotyczy Lidla. Przyklejaj naklejki tylko w sklepach Lidl, żeby przekaz był jasny.",
+    "faq5_q": "Ile naklejek powinienem/powinnam przykleić?",
+    "faq5_a": "Tyle, ile chcesz. Nawet jedna naklejka robi różnicę."
   },
   "log": {
     "title": "Zapisz swoje naklejki",
@@ -130,7 +159,9 @@
     "sources": "Źródła",
     "source_europe": "Rethink Priorities: liczba krewetek na głównych rynkach europejskich (2026)",
     "source_germany": "Rethink Priorities: krewetki w niemieckim handlu detalicznym (2026)",
-    "credits": "Lokalizacje sklepów © współtwórcy OpenStreetMap. Mapa: OpenFreeMap, © OpenMapTiles."
+    "credits": "Lokalizacje sklepów © współtwórcy OpenStreetMap. Mapa: OpenFreeMap, © OpenMapTiles.",
+    "steps": "Krok po kroku: jeśli Lidl się zobowiąże, obejmie to około {s} krewetek rocznie. Szacujemy, że kampania potrzebuje do tego {n} naklejek, a akcjom w sklepach, takim jak naklejki, przypisujemy {X}% sukcesu. Jedna naklejka pomaga więc {s} × {X}% ÷ {n} = około {per} krewetkom rocznie.",
+    "closing": "Akcje w sklepach, takie jak nasze, mają dużą siłę, ale są tylko częścią większego ruchu. Szacujemy, że odpowiadają za około {X}% sukcesu kampanii. To znaczy, że każda naklejka pomaga średnio około {N} krewetkom rocznie. Każda naklejka się liczy!"
   },
   "privacy": {
     "title": "Prywatność i nota prawna",

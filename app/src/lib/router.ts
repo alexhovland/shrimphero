@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // Hash routes (#/map) work on GitHub Pages without any server setup.
-export const ROUTES = ['/', '/log', '/map', '/leaderboard', '/me', '/stickers', '/about', '/privacy'] as const;
+export const ROUTES = ['/', '/how', '/log', '/map', '/leaderboard', '/me', '/stickers', '/about', '/privacy'] as const;
 export type Route = (typeof ROUTES)[number];
 
 function current(): Route {
