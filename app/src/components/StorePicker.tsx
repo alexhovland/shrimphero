@@ -160,18 +160,17 @@ export function StorePicker({ value, onChange, error }: { value: Store | null; o
         </ul>
       )}
       <span className="hint" id={`${id}-hint`}>{t('log.store_hint')}</span>
+      <span className="credit store-credit">
+        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">{t('footer.osm')}</a>
+        {' · '}
+        <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">© GeoNames</a>
+      </span>
       <span className="hint" id={`${id}-status`} role="status">{message}</span>
       {error && <span className="error" id={`${id}-err`}>{error}</span>}
       <div className="store-tools">
         <button type="button" className="btn btn--outline btn--small" onClick={locate}>
           {t('log.use_location')}
         </button>
-        <a className="credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
-          {t('footer.osm')}
-        </a>
-        <a className="credit" href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">
-          © GeoNames
-        </a>
       </div>
     </div>
   );

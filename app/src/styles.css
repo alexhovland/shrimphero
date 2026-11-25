@@ -658,6 +658,12 @@ a:hover {
   font-size: 14px;
   color: var(--muted);
 }
+/* Store data credits, one line under the store field's hint. */
+.store-credit {
+  display: block;
+  margin-top: var(--s1);
+  line-height: 1.8;
+}
 .block--blue .credit,
 .block--ink .credit {
   color: inherit;
