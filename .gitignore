@@ -6,3 +6,6 @@ playwright-report/
 .env.*
 # Fake local-test values only (no real keys), needed by the Playwright tests
 !.env.test
+# Screenshots made by the tests and by manual checks; not part of the site
+screenshots/
+check-screens/

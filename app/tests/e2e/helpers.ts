@@ -29,5 +29,5 @@ export function watchCsp(page: Page): string[] {
   return found;
 }
 
-export const ROUTES = ['/', '/log', '/map', '/leaderboard', '/me', '/stickers', '/about', '/privacy'] as const;
+export const ROUTES = ['/', '/how', '/log', '/map', '/leaderboard', '/me', '/stickers', '/about', '/privacy'] as const;
 export const routeName = (r: string) => (r === '/' ? 'home' : r.slice(1));

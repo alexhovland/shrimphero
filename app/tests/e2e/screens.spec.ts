@@ -42,7 +42,7 @@ test.describe('Get stickers', () => {
     await page.goto('./#/stickers');
     await expect(page.getByRole('heading', { level: 1, name: 'Order stickers' })).toBeVisible();
     await expect(page.getByText('Ordering opens soon.')).toBeVisible();
-    await expect(page.getByRole('link', { name: /Order stickers/ })).toHaveCount(0);
+    await expect(page.locator('main').getByRole('link', { name: /Order stickers/ })).toHaveCount(0);
     await expect(page.locator('main a[download], main select')).toHaveCount(0);
   });
 
@@ -50,7 +50,7 @@ test.describe('Get stickers', () => {
     // Test builds only: sets the order form link (see src/lib/order.ts).
     await page.addInitScript(() => localStorage.setItem('shrimphero-test-order-form', 'https://tally.so/r/test-form'));
     await page.goto('./#/stickers');
-    const order = page.getByRole('link', { name: /Order stickers/ });
+    const order = page.locator('main').getByRole('link', { name: /Order stickers/ });
     await expect(order).toHaveAttribute('href', 'https://tally.so/r/test-form');
     await expect(order).toHaveAttribute('target', '_blank');
     await expect(order).toHaveAttribute('rel', 'noopener noreferrer');
