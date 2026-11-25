@@ -179,7 +179,7 @@ export default function Log() {
             <Turnstile key={captchaKey} onToken={(v) => (token.current = v)} onError={() => setErrors({ form: t('errors.captcha') })} />
           )}
           {errors.form && <p className="error" role="alert">{errors.form}</p>}
-          <button type="submit" className="btn btn--blue btn--block" disabled={busy || !ready || !configured}>
+          <button type="submit" className="btn btn--blue btn--block btn--main" disabled={busy || !ready || !configured}>
             {busy ? t('log.saving') : t('log.save')}
           </button>
         </form>
