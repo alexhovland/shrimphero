@@ -905,20 +905,24 @@ a:hover {
   background: none;
   cursor: pointer;
 }
+/* Pins look like tiny round yellow stickers. The button around them stays 48 px to tap. */
 .pin span {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 32px;
   height: 32px;
-  padding: 0 var(--s2);
-  background: var(--blue);
-  color: var(--white);
-  border: 2px solid var(--white);
+  padding: 0 var(--s1);
+  background: var(--yellow);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  outline: 2px solid var(--white);
   font-family: var(--head);
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
   transition: transform var(--fast);
 }
 .pin:hover span {
@@ -927,9 +931,7 @@ a:hover {
 .pin--cluster span {
   min-width: 40px;
   height: 40px;
-  background: var(--yellow);
-  color: var(--ink);
-  border-color: var(--ink);
+  font-size: 15px;
 }
 .pin:focus-visible {
   outline: 3px solid var(--ink);
