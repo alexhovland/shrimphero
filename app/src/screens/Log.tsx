@@ -112,7 +112,7 @@ export default function Log() {
     return (
       <section className="block block--blue done" aria-labelledby="done-title">
         <div className="wrap--form">
-          <Mascot rippleKey={done.stickers + date} />
+          <Mascot rippleKey={done.stickers + date} hopKey={done.stickers + date} />
           {/* Decorative: the text below says the same. */}
           <p className="stamp" aria-hidden="true">+{formatNumber(done.stickers, lang)}</p>
           <h1 id="done-title" ref={doneTitle} tabIndex={-1}>{t('log.done_title')}</h1>

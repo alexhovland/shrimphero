@@ -984,28 +984,41 @@ a:hover {
   transform-box: fill-box;
   transform-origin: 50% 0;
 }
-.motion .mascot .antennae {
-  animation: sway 4s ease-in-out infinite;
-}
+/* Every mascot motion is short and runs once: under 600 ms in total. */
 .motion .mascot.ripple .legs path {
-  animation: ripple 420ms ease-in-out both;
+  animation: ripple 300ms ease-in-out both;
 }
-.motion .mascot.ripple .legs path:nth-child(2) { animation-delay: 50ms; }
-.motion .mascot.ripple .legs path:nth-child(3) { animation-delay: 100ms; }
-.motion .mascot.ripple .legs path:nth-child(4) { animation-delay: 150ms; }
-.motion .mascot.ripple .legs path:nth-child(5) { animation-delay: 200ms; }
-.motion .mascot.ripple .legs path:nth-child(6) { animation-delay: 250ms; }
-.motion .mascot.ripple .legs path:nth-child(7) { animation-delay: 300ms; }
-.motion .mascot.ripple .legs path:nth-child(8) { animation-delay: 350ms; }
-.motion .mascot.ripple .legs path:nth-child(9) { animation-delay: 400ms; }
+.motion .mascot.ripple .legs path:nth-child(2) { animation-delay: 25ms; }
+.motion .mascot.ripple .legs path:nth-child(3) { animation-delay: 50ms; }
+.motion .mascot.ripple .legs path:nth-child(4) { animation-delay: 75ms; }
+.motion .mascot.ripple .legs path:nth-child(5) { animation-delay: 100ms; }
+.motion .mascot.ripple .legs path:nth-child(6) { animation-delay: 125ms; }
+.motion .mascot.ripple .legs path:nth-child(7) { animation-delay: 150ms; }
+.motion .mascot.ripple .legs path:nth-child(8) { animation-delay: 175ms; }
+.motion .mascot.ripple .legs path:nth-child(9) { animation-delay: 200ms; }
 
-@keyframes sway {
-  0%,
-  100% {
-    transform: rotate(-2.5deg);
-  }
+/* Tap the shrimp on Home: a little hop and one wiggle of the antennae. */
+.mascot--tap {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.motion .mascot.hop svg {
+  animation: hop 300ms ease-out;
+}
+.motion .mascot.hop .antennae {
+  animation: wiggle 300ms ease-in-out;
+}
+@keyframes hop {
   50% {
-    transform: rotate(2.5deg);
+    transform: translateY(-8px);
+  }
+}
+@keyframes wiggle {
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(5deg);
   }
 }
 @keyframes ripple {

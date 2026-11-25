@@ -25,7 +25,7 @@ export default function Home() {
     <>
       <section className="block block--blue hero" aria-labelledby="home-title">
         <div className="wrap">
-          <Mascot />
+          <Mascot tappable />
           <h1 id="home-title">{t('home.title')}</h1>
           <div className="counters" aria-busy={!totals && !failed}>
             <p>
