@@ -1079,6 +1079,15 @@ a:hover {
 .faq p {
   margin: 0;
 }
+/* "How we count", the last section of How it works. */
+.how-we-count {
+  margin-top: var(--s12);
+  padding-top: var(--s8);
+  border-top: 4px solid var(--ink);
+}
+.prose .how-we-count > h2 {
+  margin-top: 0;
+}
 .how-more {
   margin: var(--s6) 0 0;
   font-weight: 700;

@@ -3,12 +3,14 @@ import { useI18n } from '../i18n';
 import { getImpact, type Impact } from '../lib/api';
 import { href } from '../lib/router';
 import { impactVars } from '../lib/impact';
+import { HowWeCountSection } from './About';
 
 const STEPS = [1, 2, 3, 4, 5];
 const FAQ = [1, 2, 3, 4, 5];
 
-// "How it works": why stickers work, five steps, and common questions.
-// {N} (shrimp per sticker) and {X} (store-action share) come from the settings table.
+// "How it works": why stickers work, five steps, common questions, then "How we count"
+// (where #/about scrolls to). {N} (shrimp per sticker) and {X} (store-action share)
+// come from the settings table, fetched once here for the whole page.
 export default function HowItWorks() {
   const { t, lang } = useI18n();
   const [impact, setImpact] = useState<Impact | null>(null);
@@ -50,12 +52,16 @@ export default function HowItWorks() {
         </ol>
 
         <h2>{t('how.faq_title')}</h2>
-        {FAQ.map((i) => (
-          <div className="faq" key={i}>
-            <h3>{t(`how.faq${i}_q`)}</h3>
-            <p>{t(`how.faq${i}_a`)}</p>
-          </div>
-        ))}
+        <div className="faq-list">
+          {FAQ.map((i) => (
+            <div className="faq" key={i}>
+              <h3>{t(`how.faq${i}_q`)}</h3>
+              <p>{t(`how.faq${i}_a`)}</p>
+            </div>
+          ))}
+        </div>
+
+        <HowWeCountSection impact={impact} failed={failed} />
       </div>
     </section>
   );

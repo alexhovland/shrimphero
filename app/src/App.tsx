@@ -10,7 +10,6 @@ import Home from './screens/Home';
 import Log from './screens/Log';
 import Mine from './screens/Mine';
 import Stickers from './screens/Stickers';
-import About from './screens/About';
 import HowItWorks from './screens/HowItWorks';
 import Privacy from './screens/Privacy';
 import MapScreen from './screens/MapScreen';
@@ -24,7 +23,6 @@ const PAGES: Partial<Record<Route, React.ComponentType>> = {
   '/map': MapScreen,
   '/me': Mine,
   '/stickers': Stickers,
-  '/about': About,
   '/privacy': Privacy,
 };
 

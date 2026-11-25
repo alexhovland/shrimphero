@@ -5,9 +5,10 @@ export const ROUTES = ['/', '/how', '/log', '/map', '/leaderboard', '/me', '/sti
 export type Route = (typeof ROUTES)[number];
 
 // Some routes open another page and scroll to one of its sections.
-// The old links keep working: #/leaderboard is the ranking under the map.
-const PAGE_OF: Partial<Record<Route, Route>> = { '/leaderboard': '/map' };
-const SECTION_OF: Partial<Record<Route, string>> = { '/leaderboard': 'ranking' };
+// The old links keep working: #/leaderboard is the ranking under the map, and
+// #/about is "How we count" at the end of How it works.
+const PAGE_OF: Partial<Record<Route, Route>> = { '/leaderboard': '/map', '/about': '/how' };
+const SECTION_OF: Partial<Record<Route, string>> = { '/leaderboard': 'ranking', '/about': 'how-we-count' };
 export const pageOf = (r: Route): Route => PAGE_OF[r] ?? r;
 export const sectionOf = (r: Route): string | undefined => SECTION_OF[r];
 
