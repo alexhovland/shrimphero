@@ -91,7 +91,7 @@ export function RankingSection() {
                 const mine = !!me?.nickname && me.nickname === r.nickname;
                 return (
                   <tr key={r.nickname} className={mine ? 'is-me' : undefined}>
-                    <td className="rank">{r.rank}</td>
+                    <td className="rank">{r.rank <= 3 ? <span className={`medal medal--${r.rank}`}>{r.rank}</span> : r.rank}</td>
                     <td>
                       <div className="nick">
                         <span>{r.nickname}</span>

@@ -788,8 +788,31 @@ a:hover {
 .table .nick .tag {
   margin-left: 0;
 }
+/* The visitor's own row. */
 .table tr.is-me td {
   background: var(--yellow);
+}
+/* Places 1 to 3: a small tilted sticker instead of the plain number. */
+.medal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--white);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-family: var(--head);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+  transform: rotate(-6deg);
+}
+.medal--2 {
+  transform: rotate(4deg);
+}
+.medal--3 {
+  transform: rotate(-3deg);
 }
 .tag {
   display: inline-block;
