@@ -212,5 +212,6 @@
     "captcha": "Der Roboter-Check hat nicht geladen. Schalte Inhaltsblocker für diese Seite aus oder versuch es noch einmal.",
     "generic": "Etwas ist schiefgelaufen. Versuch es noch einmal.",
     "not_configured": "Die Website ist noch nicht mit ihrer Datenbank verbunden."
-  }
+  },
+  "meta": { "description": "Kleb einen Aufkleber auf eine Garnelenpackung bei Lidl, trag ihn hier ein und sieh alle Aufkleber auf der Karte." }
 }

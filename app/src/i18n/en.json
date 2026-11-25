@@ -212,5 +212,6 @@
     "captcha": "The robot check didn't load. Turn off content blockers for this site, or try again.",
     "generic": "Something went wrong. Try again.",
     "not_configured": "The site isn't connected to its database yet."
-  }
+  },
+  "meta": { "description": "Stick a sticker on a Lidl shrimp box, log it here, and see every sticker on the map." }
 }

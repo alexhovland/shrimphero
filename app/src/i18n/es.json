@@ -212,5 +212,6 @@
     "captcha": "La comprobación anti-robot no ha cargado. Desactiva los bloqueadores de contenido para esta web o vuelve a intentarlo.",
     "generic": "Algo ha fallado. Vuelve a intentarlo.",
     "not_configured": "La web todavía no está conectada a su base de datos."
-  }
+  },
+  "meta": { "description": "Pega una pegatina en una caja de gambas en Lidl, regístrala aquí y mira todas las pegatinas en el mapa." }
 }

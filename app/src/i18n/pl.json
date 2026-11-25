@@ -223,5 +223,6 @@
     "captcha": "Weryfikacja się nie załadowała. Wyłącz blokowanie treści dla tej strony albo spróbuj ponownie.",
     "generic": "Coś poszło nie tak. Spróbuj ponownie.",
     "not_configured": "Strona nie jest jeszcze połączona z bazą danych."
-  }
+  },
+  "meta": { "description": "Naklej naklejkę na opakowanie krewetek w Lidlu, zapisz ją tutaj i zobacz wszystkie naklejki na mapie." }
 }

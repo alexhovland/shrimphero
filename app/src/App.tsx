@@ -57,6 +57,11 @@ export default function App() {
     document.title = title ? `${t(title)} · ShrimpHero` : 'ShrimpHero';
   }, [title, t]);
 
+  // The page description follows the interface language.
+  useEffect(() => {
+    document.querySelector('meta[name="description"]')?.setAttribute('content', t('meta.description'));
+  }, [t]);
+
   // One page view per route change, counted after the title above is set
   // (effects run in order). A language change alone does not count again.
   useEffect(() => countPage(route), [route]);

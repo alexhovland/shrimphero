@@ -212,5 +212,6 @@
     "captcha": "La vérification anti-robot ne s'est pas chargée. Désactivez les bloqueurs de contenu pour ce site, ou réessayez.",
     "generic": "Un problème est survenu. Réessayez.",
     "not_configured": "Le site n'est pas encore relié à sa base de données."
-  }
+  },
+  "meta": { "description": "Collez un autocollant sur une boîte de crevettes chez Lidl, déclarez-le ici et voyez tous les autocollants sur la carte." }
 }

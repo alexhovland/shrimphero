@@ -212,5 +212,6 @@
     "captcha": "La verifica anti-robot non si è caricata. Disattiva i blocchi dei contenuti per questo sito, o riprova.",
     "generic": "Qualcosa è andato storto. Riprova.",
     "not_configured": "Il sito non è ancora collegato al suo database."
-  }
+  },
+  "meta": { "description": "Attacca un adesivo su una confezione di gamberetti da Lidl, registralo qui e guarda tutti gli adesivi sulla mappa." }
 }
