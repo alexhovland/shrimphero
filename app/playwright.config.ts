@@ -8,7 +8,7 @@ export default defineConfig({
   workers: 1,
   reporter: [['list']],
   use: {
-    baseURL: 'http://127.0.0.1:4173/shrimphero/',
+    baseURL: 'http://127.0.0.1:4173/',
     trace: 'off',
   },
   webServer: [
@@ -19,7 +19,7 @@ export default defineConfig({
     },
     {
       command: 'npx vite build --mode test && npx vite preview --mode test --port 4173 --strictPort --host 127.0.0.1',
-      url: 'http://127.0.0.1:4173/shrimphero/',
+      url: 'http://127.0.0.1:4173/',
       reuseExistingServer: false,
       timeout: 120_000,
     },

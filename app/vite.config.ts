@@ -32,9 +32,9 @@ function contentSecurityPolicy(env: Record<string, string>): Plugin {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_');
   return {
-    // The site lives at https://<username>.github.io/shrimphero/. With a custom
-    // domain later, set the repository variable BASE_PATH to "/".
-    base: process.env.BASE_PATH || '/shrimphero/',
+    // The site lives at https://shrimphero.org/ (custom domain, so the base is "/").
+    // To serve it from a sub-folder instead, set the repository variable BASE_PATH (e.g. "/shrimphero/").
+    base: process.env.BASE_PATH || '/',
     plugins: [react(), contentSecurityPolicy(env)],
     build: {
       sourcemap: false,

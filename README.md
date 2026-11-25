@@ -1,5 +1,7 @@
 # ShrimpHero
 
+Live at **https://shrimphero.org**.
+
 A small website where volunteers log the campaign stickers they put on shrimp boxes in Lidl stores. People see the total, a map of stores with stickers, and a leaderboard of nicknames. No account, no email, no tracking.
 
 The step-by-step launch guide is in [LAUNCH-GUIDE.md](LAUNCH-GUIDE.md). This file explains what is in the folder, how it works, and the choices made while building it.
@@ -62,7 +64,7 @@ I tested the script on sample data, including the CSV import and merge in Postgr
 
 Where the brief was open, I picked the simplest safe option:
 
-- **Routes use `#`** (for example `/shrimphero/#/map`), so GitHub Pages needs no setup. A `404.html` copy is added anyway.
+- **Routes use `#`** (for example `https://shrimphero.org/#/map`), so GitHub Pages needs no setup. A `404.html` copy is added anyway.
 - **Reporting needs a login.** Only someone who has logged stickers from that browser can report a nickname. This keeps the 20-reports-a-day limit meaningful without asking strangers to pass a robot check just to report.
 - **The robot check loads only when someone starts filling the Log form**, not when they open the site. Cloudflare sees visitors only when they log, as the privacy page says.
 - **Days follow Paris time** for the 7-day window and the daily limits. Someone in the UK logging just before midnight may find the oldest day refused.
@@ -73,7 +75,7 @@ Where the brief was open, I picked the simplest safe option:
 - **The last chosen store is remembered in the browser**, so regulars don't search every time. It is never sent anywhere else.
 - **Fonts** ship only the Latin and Latin Extended character sets (enough for all six languages and the sticker language names).
 - **Imprint.** Published under the project name ShrimpHero with a contact email and the host's name and address, so neither a person nor an organisation is named. ICAW also stays a reserved nickname.
-- **The site path** is `/shrimphero/`. For a custom domain later, set the repository variable `BASE_PATH` to `/` (see the launch guide).
+- **The site path** is `/`, on the custom domain `https://shrimphero.org` (the `app/public/CNAME` file holds the domain). To serve it from a sub-folder instead, set the repository variable `BASE_PATH`, for example to `/shrimphero/`.
 - **Supabase keys.** The site works with both the new publishable key (`sb_publishable_...`) and the older anon key.
 
 ## What was checked

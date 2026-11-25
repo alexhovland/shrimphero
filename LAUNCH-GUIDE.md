@@ -1,6 +1,6 @@
 # ShrimpHero launch guide
 
-About two hours of clicking, which you can spread over several days. At the end the site runs at `https://<username>.github.io/shrimphero/` on free plans, with no card and no real name anywhere. Tick each box as you go.
+About two hours of clicking, which you can spread over several days. At the end the site runs at `https://shrimphero.org` on free plans, with no card and no real name anywhere. Tick each box as you go.
 
 `<username>` below means the GitHub username you create in step 3.
 
@@ -52,7 +52,7 @@ Turnstile is Cloudflare's free, mostly invisible robot check. It stops bots from
 - [ ] Sign up at [dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up) with the Proton address. Free plan, no card. Confirm the email.
 - [ ] Profile icon at the top right, then **Profile**, then **Authentication**: under **Two-Factor Authentication** set up **Mobile App Authentication**. Save the backup codes.
 - [ ] In the left menu open **Turnstile** (in some layouts it sits under **Application security**; or type Turnstile in the search box). Click **Add widget**.
-- [ ] **Widget name:** `ShrimpHero`. **Hostname management:** click **Add Hostnames** and add `<username>.github.io`. **Widget Mode:** **Managed**. Pre-clearance: **No**. Click **Create**.
+- [ ] **Widget name:** `ShrimpHero`. **Hostname management:** click **Add Hostnames** and add `shrimphero.org` (and `<username>.github.io` while testing there). **Widget Mode:** **Managed**. Pre-clearance: **No**. Click **Create**.
 - [ ] Copy the **Site Key** and the **Secret Key** into the password manager. The Site Key goes into GitHub (step 6). The Secret Key goes only into Supabase (step 5), nowhere else.
 
 ## 5. Supabase, the database (30 min)
@@ -72,7 +72,7 @@ A new Supabase account, separate from any you already have.
 - [ ] Still in **Sign In / Providers**, under **Auth Providers**, open **Email** and turn off **Enable Email provider**. Save. (Email stays off until "save my progress with email" is built.)
 - [ ] **Attack Protection**: turn on **Enable Captcha protection**, choose **Turnstile by Cloudflare**, paste the **Secret Key** from step 4 into **Captcha secret**, and save.
 - [ ] **Rate Limits**: set **Rate limit for anonymous users** to `10` (sign-ins per hour per IP address). Save.
-- [ ] **URL Configuration**: set **Site URL** to `https://<username>.github.io/shrimphero/`. Save.
+- [ ] **URL Configuration**: set **Site URL** to `https://shrimphero.org/`. Save.
 
 **Database**
 
@@ -126,7 +126,7 @@ You upload through the GitHub website, in the ShrimpHero browser profile. That w
 **Publish**
 
 - [ ] **Actions** tab. On the left click **Deploy**, then **Run workflow**, then the green **Run workflow** button. Wait 2 to 3 minutes for a green tick. (A red cross that says "Missing repository variables" means one of the three variables is missing or misspelled.)
-- [ ] Open `https://<username>.github.io/shrimphero/`. The site should show "0 stickers stuck so far".
+- [ ] Open `https://shrimphero.org/`. The site should show "0 stickers stuck so far".
 
 **Store list**
 
@@ -184,7 +184,7 @@ GitHub Pages can't send some security headers (for example the one that stops ot
 - [ ] Cloudflare **DNS**, **Records**: add four `A` records for the bare domain pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`, and a `CNAME` record `www` pointing to `<username>.github.io`. Proxy status: **Proxied** (orange cloud).
 - [ ] Cloudflare **SSL/TLS**: set the mode to **Full**. Under **Edge Certificates**, turn on **Always Use HTTPS**.
 - [ ] GitHub repository **Settings**, **Pages**: type the domain under **Custom domain** and click **Save**.
-- [ ] GitHub **Settings**, **Secrets and variables**, **Actions**, **Variables**: add `BASE_PATH` = `/`. Then **Actions**, **Deploy**, **Run workflow**.
+- [ ] No `BASE_PATH` variable is needed any more: the site path is `/` by default. Run **Actions**, **Deploy**, **Run workflow** once the domain is saved.
 - [ ] Cloudflare **Rules**, **Transform Rules** (or **Rules overview**, then **Response Header Transform Rules**), **Create rule**, for all incoming requests, **Set static** headers:
   - `Strict-Transport-Security` = `max-age=31536000`
   - `X-Frame-Options` = `DENY`
