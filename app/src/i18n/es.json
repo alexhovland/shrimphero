@@ -49,7 +49,7 @@
     "title": "Registra tus pegatinas",
     "store_label": "Tienda Lidl",
     "store_placeholder": "Ciudad, calle o código postal",
-    "store_hint": "Escribe al menos 2 letras.",
+    "store_hint": "Escribe tu ciudad o tu pueblo.",
     "searching": "Buscando…",
     "use_location": "Usar mi ubicación",
     "locating": "Buscando tiendas cerca de ti…",
@@ -74,7 +74,7 @@
       "one": "{stickers} pegatina. Son unas {shrimp} gambas ayudadas al año.",
       "other": "{stickers} pegatinas. Son unas {shrimp} gambas ayudadas al año."
     },
-    "done_petition": "Ahora firma también la petición.",
+    "done_petition": "Una cosa más: firma la petición.",
     "log_more": "Registrar más",
     "see_map": "Ver el mapa"
   },
@@ -86,7 +86,7 @@
     "gesture_mac": "Usa ⌘ + desplazamiento para hacer zoom en el mapa",
     "gesture_mobile": "Usa dos dedos para mover el mapa",
     "loading": "Cargando el mapa…",
-    "empty": "Todavía no hay pegatinas registradas.",
+    "empty": "Aún no hay pegatinas. La tuya puede ser la primera.",
     "failed": "El mapa no se ha cargado. Revisa tu conexión y vuelve a intentarlo.",
     "stickers": { "one": "{total} pegatina", "other": "{total} pegatinas" },
     "cluster": {
@@ -104,8 +104,8 @@
       "one": "Estás en el puesto {rank} con {total} pegatina.",
       "other": "Estás en el puesto {rank} con {total} pegatinas."
     },
-    "not_ranked": "Registra pegatinas para entrar en el ranking.",
-    "empty": "Todavía no hay nadie en el ranking.",
+    "not_ranked": "Registra una pegatina y únete.",
+    "empty": "Aún no hay nadie. ¡Empieza tú!",
     "report": "Denunciar",
     "report_aria": "Denunciar el apodo {nickname}",
     "confirm_report": "¿Denunciar a {nickname}?",
@@ -114,7 +114,7 @@
   },
   "me": {
     "title": "Mis pegatinas",
-    "none": "Todavía no hay pegatinas registradas desde este navegador.",
+    "none": "Aún no hay pegatinas desde este navegador.",
     "summary": { "one": "{total} pegatina · puesto {rank}", "other": "{total} pegatinas · puesto {rank}" },
     "summary_unranked": { "one": "{total} pegatina", "other": "{total} pegatinas" },
     "goals_label": "Objetivos",

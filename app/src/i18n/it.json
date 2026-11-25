@@ -49,7 +49,7 @@
     "title": "Registra i tuoi adesivi",
     "store_label": "Negozio Lidl",
     "store_placeholder": "Città, via o CAP",
-    "store_hint": "Scrivi almeno 2 lettere.",
+    "store_hint": "Scrivi la tua città o il tuo paese.",
     "searching": "Ricerca…",
     "use_location": "Usa la mia posizione",
     "locating": "Cerco i negozi vicini…",
@@ -74,7 +74,7 @@
       "one": "{stickers} adesivo. Circa {shrimp} gamberetti aiutati all'anno.",
       "other": "{stickers} adesivi. Circa {shrimp} gamberetti aiutati all'anno."
     },
-    "done_petition": "Ora firma anche la petizione.",
+    "done_petition": "Un'ultima cosa: firma la petizione.",
     "log_more": "Registrane altri",
     "see_map": "Vedi la mappa"
   },
@@ -86,7 +86,7 @@
     "gesture_mac": "Usa ⌘ + scorrimento per ingrandire la mappa",
     "gesture_mobile": "Usa due dita per spostare la mappa",
     "loading": "Caricamento della mappa…",
-    "empty": "Ancora nessun adesivo registrato.",
+    "empty": "Ancora nessun adesivo. Il tuo può essere il primo.",
     "failed": "La mappa non si è caricata. Controlla la connessione e riprova.",
     "stickers": { "one": "{total} adesivo", "other": "{total} adesivi" },
     "cluster": {
@@ -104,8 +104,8 @@
       "one": "Sei al {rank}° posto con {total} adesivo.",
       "other": "Sei al {rank}° posto con {total} adesivi."
     },
-    "not_ranked": "Registra degli adesivi per entrare in classifica.",
-    "empty": "Ancora nessuno in classifica.",
+    "not_ranked": "Registra un adesivo per partecipare.",
+    "empty": "Ancora nessuno. Inizia tu!",
     "report": "Segnala",
     "report_aria": "Segnala il nickname {nickname}",
     "confirm_report": "Segnalare {nickname}?",
@@ -114,7 +114,7 @@
   },
   "me": {
     "title": "I miei adesivi",
-    "none": "Nessun adesivo registrato da questo browser.",
+    "none": "Ancora nessun adesivo da questo browser.",
     "summary": { "one": "{total} adesivo · {rank}° posto", "other": "{total} adesivi · {rank}° posto" },
     "summary_unranked": { "one": "{total} adesivo", "other": "{total} adesivi" },
     "goals_label": "Obiettivi",

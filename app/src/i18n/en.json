@@ -49,7 +49,7 @@
     "title": "Log your stickers",
     "store_label": "Lidl store",
     "store_placeholder": "City, street or postcode",
-    "store_hint": "Type at least 2 letters.",
+    "store_hint": "Type your town or village.",
     "searching": "Searching…",
     "use_location": "Use my location",
     "locating": "Looking for stores near you…",
@@ -74,7 +74,7 @@
       "one": "{stickers} sticker. That's about {shrimp} shrimp helped per year.",
       "other": "{stickers} stickers. That's about {shrimp} shrimp helped per year."
     },
-    "done_petition": "Now sign the petition too.",
+    "done_petition": "One more thing: sign the petition.",
     "log_more": "Log more",
     "see_map": "See the map"
   },
@@ -86,7 +86,7 @@
     "gesture_mac": "Use ⌘ + scroll to zoom the map",
     "gesture_mobile": "Use two fingers to move the map",
     "loading": "Loading the map…",
-    "empty": "No stickers logged yet.",
+    "empty": "No stickers yet. Yours could be the first.",
     "failed": "The map didn't load. Check your connection and try again.",
     "stickers": { "one": "{total} sticker", "other": "{total} stickers" },
     "cluster": {
@@ -104,8 +104,8 @@
       "one": "You're #{rank} with {total} sticker.",
       "other": "You're #{rank} with {total} stickers."
     },
-    "not_ranked": "Log stickers to get on the board.",
-    "empty": "Nobody on the board yet.",
+    "not_ranked": "Log a sticker to join in.",
+    "empty": "Nobody yet. Be the first.",
     "report": "Report",
     "report_aria": "Report the nickname {nickname}",
     "confirm_report": "Report {nickname}?",
@@ -114,7 +114,7 @@
   },
   "me": {
     "title": "My stickers",
-    "none": "No stickers logged in this browser yet.",
+    "none": "No stickers from this browser yet.",
     "summary": { "one": "{total} sticker · rank #{rank}", "other": "{total} stickers · rank #{rank}" },
     "summary_unranked": { "one": "{total} sticker", "other": "{total} stickers" },
     "goals_label": "Goals",

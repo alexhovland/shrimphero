@@ -49,7 +49,7 @@
     "title": "Déclarer vos autocollants",
     "store_label": "Magasin Lidl",
     "store_placeholder": "Ville, rue ou code postal",
-    "store_hint": "Tapez au moins 2 lettres.",
+    "store_hint": "Tapez votre ville ou votre village.",
     "searching": "Recherche…",
     "use_location": "Utiliser ma position",
     "locating": "Recherche des magasins proches…",
@@ -74,7 +74,7 @@
       "one": "{stickers} autocollant. Environ {shrimp} crevettes aidées par an.",
       "other": "{stickers} autocollants. Environ {shrimp} crevettes aidées par an."
     },
-    "done_petition": "Signez aussi la pétition.",
+    "done_petition": "Encore une chose : signez la pétition.",
     "log_more": "En déclarer d'autres",
     "see_map": "Voir la carte"
   },
@@ -86,7 +86,7 @@
     "gesture_mac": "⌘ + défilement pour zoomer sur la carte",
     "gesture_mobile": "Utilisez deux doigts pour déplacer la carte",
     "loading": "Chargement de la carte…",
-    "empty": "Aucun autocollant déclaré pour l'instant.",
+    "empty": "Pas encore d'autocollants. Le vôtre peut être le premier.",
     "failed": "La carte ne s'est pas chargée. Vérifiez votre connexion et réessayez.",
     "stickers": { "one": "{total} autocollant", "other": "{total} autocollants" },
     "cluster": {
@@ -104,8 +104,8 @@
       "one": "Vous êtes n° {rank} avec {total} autocollant.",
       "other": "Vous êtes n° {rank} avec {total} autocollants."
     },
-    "not_ranked": "Déclarez des autocollants pour entrer dans le classement.",
-    "empty": "Personne dans le classement pour l'instant.",
+    "not_ranked": "Déclarez un autocollant pour participer.",
+    "empty": "Personne pour l'instant. À vous de commencer !",
     "report": "Signaler",
     "report_aria": "Signaler le pseudo {nickname}",
     "confirm_report": "Signaler {nickname} ?",
@@ -114,7 +114,7 @@
   },
   "me": {
     "title": "Mes autocollants",
-    "none": "Aucun autocollant déclaré depuis ce navigateur.",
+    "none": "Pas encore d'autocollants depuis ce navigateur.",
     "summary": { "one": "{total} autocollant · rang n° {rank}", "other": "{total} autocollants · rang n° {rank}" },
     "summary_unranked": { "one": "{total} autocollant", "other": "{total} autocollants" },
     "goals_label": "Objectifs",

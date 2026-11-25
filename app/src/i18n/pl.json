@@ -49,7 +49,7 @@
     "title": "Zapisz swoje naklejki",
     "store_label": "Sklep Lidl",
     "store_placeholder": "Miasto, ulica lub kod pocztowy",
-    "store_hint": "Wpisz co najmniej 2 litery.",
+    "store_hint": "Wpisz swoje miasto lub wieś.",
     "searching": "Szukam…",
     "use_location": "Użyj mojej lokalizacji",
     "locating": "Szukam sklepów w pobliżu…",
@@ -76,7 +76,7 @@
       "many": "{stickers} naklejek. To około {shrimp} krewetek, którym pomagasz rocznie.",
       "other": "{stickers} naklejki. To około {shrimp} krewetek, którym pomagasz rocznie."
     },
-    "done_petition": "Teraz podpisz też petycję.",
+    "done_petition": "Jeszcze jedno: podpisz petycję.",
     "log_more": "Dodaj więcej",
     "see_map": "Zobacz mapę"
   },
@@ -88,7 +88,7 @@
     "gesture_mac": "Użyj ⌘ + przewijania, aby powiększyć mapę",
     "gesture_mobile": "Przesuń mapę dwoma palcami",
     "loading": "Ładowanie mapy…",
-    "empty": "Nie zapisano jeszcze żadnych naklejek.",
+    "empty": "Jeszcze brak naklejek. Twoja może być pierwsza.",
     "failed": "Mapa się nie załadowała. Sprawdź połączenie i spróbuj ponownie.",
     "stickers": { "one": "{total} naklejka", "few": "{total} naklejki", "many": "{total} naklejek", "other": "{total} naklejki" },
     "cluster": {
@@ -110,8 +110,8 @@
       "many": "Jesteś na {rank}. miejscu z {total} naklejkami.",
       "other": "Jesteś na {rank}. miejscu z {total} naklejki."
     },
-    "not_ranked": "Zapisz naklejki, żeby trafić do rankingu.",
-    "empty": "Nikogo jeszcze nie ma w rankingu.",
+    "not_ranked": "Zapisz naklejkę i dołącz.",
+    "empty": "Jeszcze pusto. Zacznij!",
     "report": "Zgłoś",
     "report_aria": "Zgłoś pseudonim {nickname}",
     "confirm_report": "Zgłosić {nickname}?",
@@ -120,7 +120,7 @@
   },
   "me": {
     "title": "Moje naklejki",
-    "none": "W tej przeglądarce nie zapisano jeszcze naklejek.",
+    "none": "Z tej przeglądarki nie ma jeszcze naklejek.",
     "summary": {
       "one": "{total} naklejka · {rank}. miejsce",
       "few": "{total} naklejki · {rank}. miejsce",

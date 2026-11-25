@@ -49,7 +49,7 @@
     "title": "Aufkleber eintragen",
     "store_label": "Lidl-Filiale",
     "store_placeholder": "Ort, Straße oder PLZ",
-    "store_hint": "Mindestens 2 Buchstaben eingeben.",
+    "store_hint": "Gib deinen Ort ein.",
     "searching": "Suche…",
     "use_location": "Meinen Standort nutzen",
     "locating": "Suche Filialen in deiner Nähe…",
@@ -74,7 +74,7 @@
       "one": "{stickers} Aufkleber. Das hilft etwa {shrimp} Garnelen pro Jahr.",
       "other": "{stickers} Aufkleber. Das hilft etwa {shrimp} Garnelen pro Jahr."
     },
-    "done_petition": "Unterschreib jetzt auch die Petition.",
+    "done_petition": "Noch eins: Unterschreib die Petition.",
     "log_more": "Mehr eintragen",
     "see_map": "Zur Karte"
   },
@@ -86,7 +86,7 @@
     "gesture_mac": "⌘ + Scrollen, um die Karte zu zoomen",
     "gesture_mobile": "Mit zwei Fingern die Karte bewegen",
     "loading": "Karte wird geladen…",
-    "empty": "Noch keine Aufkleber eingetragen.",
+    "empty": "Noch keine Aufkleber. Deiner kann der erste sein.",
     "failed": "Die Karte hat nicht geladen. Prüf deine Verbindung und versuch es noch einmal.",
     "stickers": { "one": "{total} Aufkleber", "other": "{total} Aufkleber" },
     "cluster": {
@@ -104,8 +104,8 @@
       "one": "Du bist auf Platz {rank} mit {total} Aufkleber.",
       "other": "Du bist auf Platz {rank} mit {total} Aufklebern."
     },
-    "not_ranked": "Trag Aufkleber ein, um in die Rangliste zu kommen.",
-    "empty": "Noch niemand in der Rangliste.",
+    "not_ranked": "Trag einen Aufkleber ein und mach mit.",
+    "empty": "Noch niemand da. Fang du an!",
     "report": "Melden",
     "report_aria": "Spitzname {nickname} melden",
     "confirm_report": "{nickname} melden?",
@@ -114,7 +114,7 @@
   },
   "me": {
     "title": "Meine Aufkleber",
-    "none": "In diesem Browser sind noch keine Aufkleber eingetragen.",
+    "none": "Noch keine Aufkleber aus diesem Browser.",
     "summary": { "one": "{total} Aufkleber · Platz {rank}", "other": "{total} Aufkleber · Platz {rank}" },
     "summary_unranked": { "one": "{total} Aufkleber", "other": "{total} Aufkleber" },
     "goals_label": "Ziele",
