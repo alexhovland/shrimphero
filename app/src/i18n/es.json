@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Inicio", "how": "Cómo funciona", "log": "Registrar", "map": "Mapa", "me": "Las mías", "menu": "Menú principal" },
+  "nav": { "home": "Inicio", "how": "Cómo funciona", "how_short": "Guía", "log": "Registrar", "map": "Mapa", "me": "Las mías", "menu": "Menú principal" },
   "header": { "language": "Idioma", "skip": "Ir al contenido", "home": "ShrimpHero, inicio" },
   "home": {
     "title": "Una pegatina en cada caja de gambas de Lidl",

@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Accueil", "how": "Comment ça marche", "log": "Déclarer", "map": "Carte", "me": "Les miens", "menu": "Menu principal" },
+  "nav": { "home": "Accueil", "how": "Comment ça marche", "how_short": "Infos", "log": "Déclarer", "map": "Carte", "me": "Les miens", "menu": "Menu principal" },
   "header": { "language": "Langue", "skip": "Aller au contenu", "home": "ShrimpHero, accueil" },
   "home": {
     "title": "Un autocollant sur chaque boîte de crevettes Lidl",

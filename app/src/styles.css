@@ -298,8 +298,22 @@ a:hover {
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
+  /* One line, whole words: the labels are short enough for 5 tabs at 320 px. */
+  white-space: nowrap;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+  overflow-wrap: normal;
   border-top: 3px solid transparent;
   transition: color var(--fast), border-color var(--fast);
+}
+/* A tiny press on the tapped tab's icon (only when motion is allowed). */
+.motion .tabbar a.press svg {
+  animation: tab-press 150ms ease-out;
+}
+@keyframes tab-press {
+  50% {
+    transform: scale(0.9);
+  }
 }
 .tabbar a[aria-current='page'] {
   color: var(--yellow);

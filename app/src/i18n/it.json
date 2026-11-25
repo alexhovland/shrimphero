@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "how": "Come funziona", "log": "Registra", "map": "Mappa", "me": "I miei", "menu": "Menu principale" },
+  "nav": { "home": "Home", "how": "Come funziona", "how_short": "Guida", "log": "Registra", "map": "Mappa", "me": "I miei", "menu": "Menu principale" },
   "header": { "language": "Lingua", "skip": "Vai al contenuto", "home": "ShrimpHero, home" },
   "home": {
     "title": "Un adesivo su ogni confezione di gamberetti Lidl",

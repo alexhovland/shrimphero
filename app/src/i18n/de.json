@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "how": "So funktioniert's", "log": "Eintragen", "map": "Karte", "me": "Meine", "menu": "Hauptmenü" },
+  "nav": { "home": "Start", "how": "So funktioniert's", "how_short": "Infos", "log": "Eintragen", "map": "Karte", "me": "Meine", "menu": "Hauptmenü" },
   "header": { "language": "Sprache", "skip": "Zum Inhalt", "home": "ShrimpHero, Startseite" },
   "home": {
     "title": "Ein Aufkleber auf jede Garnelen­packung bei Lidl",

@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "how": "How it works", "log": "Log", "map": "Map", "me": "Mine", "menu": "Main menu" },
+  "nav": { "home": "Home", "how": "How it works", "how_short": "Guide", "log": "Log", "map": "Map", "me": "Mine", "menu": "Main menu" },
   "header": { "language": "Language", "skip": "Skip to content", "home": "ShrimpHero, home" },
   "home": {
     "title": "A sticker on every Lidl shrimp box",

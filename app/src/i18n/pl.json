@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "how": "Jak to działa", "log": "Dodaj", "map": "Mapa", "me": "Moje", "menu": "Menu główne" },
+  "nav": { "home": "Start", "how": "Jak to działa", "how_short": "Info", "log": "Dodaj", "map": "Mapa", "me": "Moje", "menu": "Menu główne" },
   "header": { "language": "Język", "skip": "Przejdź do treści", "home": "ShrimpHero, strona główna" },
   "home": {
     "title": "Naklejka na każdym opakowaniu krewetek w Lidlu",
