@@ -24,8 +24,8 @@
   --s16: 64px;
   --s20: 80px;
 
-  --head: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
-  --body: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --head: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --body: 'Bricolage Grotesque Variable', system-ui, sans-serif;
 
   --text-max: 720px;
   --form-max: 480px;
@@ -51,8 +51,10 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--body);
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -66,16 +68,16 @@ h1,
 h2,
 h3 {
   font-family: var(--head);
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
   margin: 0 0 var(--s4);
   overflow-wrap: break-word;
   hyphens: auto;
 }
 h1 {
   font-size: clamp(32px, 9vw, 56px);
-  letter-spacing: -0.01em;
+  line-height: 1;
 }
 h2 {
   font-size: clamp(24px, 6vw, 32px);
@@ -194,7 +196,7 @@ a:hover {
   align-items: center;
   gap: var(--s2);
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -424,7 +426,7 @@ a:hover {
 .counter__value {
   display: block;
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: clamp(44px, 13vw, 72px);
   line-height: 1;
   color: var(--yellow);
@@ -467,7 +469,7 @@ a:hover {
 .steps li::before {
   content: counter(step);
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 32px;
   line-height: 1;
   color: var(--blue);
@@ -644,7 +646,7 @@ a:hover {
   background: var(--white);
   color: var(--ink);
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 24px;
   cursor: pointer;
   transition: background-color var(--fast);
@@ -664,7 +666,7 @@ a:hover {
   border-radius: 0;
   text-align: center;
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 24px;
   color: var(--ink);
   background: var(--white);
@@ -722,7 +724,7 @@ a:hover {
 .table .rank {
   width: 48px;
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
 }
 .table .nick {
   display: flex;
@@ -787,7 +789,7 @@ a:hover {
 }
 .entry__count {
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 20px;
 }
 .entry__where {
@@ -802,7 +804,7 @@ a:hover {
 }
 .summary {
   font-family: var(--head);
-  font-weight: 900;
+  font-weight: 800;
   font-size: 24px;
   margin-bottom: var(--s2);
 }
@@ -1060,7 +1062,6 @@ a:hover {
 .faq h3 {
   font-size: 18px;
   font-weight: 800;
-  text-transform: none;
   line-height: 1.3;
   margin-bottom: var(--s2);
 }

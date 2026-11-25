@@ -118,4 +118,4 @@ Local development with a real project: create `app/.env.local` with `VITE_SUPABA
 
 ## Licences
 
-Code: MIT (see `LICENSE`). Fonts: Libre Franklin and Newsreader, SIL Open Font License 1.1, bundled through Fontsource. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Town and village names: © GeoNames, CC BY 4.0; the credit appears on the Log screen. Sticker images and campaign texts belong to the campaign.
+Code: MIT (see `LICENSE`). Font: Bricolage Grotesque, SIL Open Font License 1.1, bundled through Fontsource. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Town and village names: © GeoNames, CC BY 4.0; the credit appears on the Log screen. Sticker images and campaign texts belong to the campaign.
