@@ -116,7 +116,6 @@
     "p": "p = {p}: the share of the win owed to store actions like stickers. A guess.",
     "n": "N = {n}: stickers needed to win. A guess.",
     "result": "{s} × {p} ÷ {n} = {per} shrimp per sticker per year.",
-    "same_logic": "It's the same method the Aldi campaign used, which gave 34 shrimp per action.",
     "sources": "Sources",
     "source_europe": "Rethink Priorities: the number of shrimp in major European markets (2026)",
     "source_germany": "Rethink Priorities: shrimp in the German retail market (2026)",

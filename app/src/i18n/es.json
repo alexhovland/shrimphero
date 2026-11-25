@@ -116,7 +116,6 @@
     "p": "p = {p}: la parte de la victoria que se debe a acciones en tienda como las pegatinas. Una estimación.",
     "n": "N = {n}: pegatinas necesarias para ganar. Una estimación.",
     "result": "{s} × {p} ÷ {n} = {per} gambas por pegatina al año.",
-    "same_logic": "Es el mismo método que usó la campaña de Aldi, que daba 34 gambas por acción.",
     "sources": "Fuentes",
     "source_europe": "Rethink Priorities: el número de gambas en los grandes mercados europeos (2026)",
     "source_germany": "Rethink Priorities: las gambas en la distribución alemana (2026)",

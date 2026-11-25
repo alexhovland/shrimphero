@@ -116,7 +116,6 @@
     "p": "p = {p}: la quota della vittoria dovuta alle azioni nei negozi, come gli adesivi. Una stima.",
     "n": "N = {n}: adesivi necessari per vincere. Una stima.",
     "result": "{s} × {p} ÷ {n} = {per} gamberetti per adesivo all'anno.",
-    "same_logic": "È lo stesso metodo della campagna Aldi, che dava 34 gamberetti per azione.",
     "sources": "Fonti",
     "source_europe": "Rethink Priorities: il numero di gamberetti nei principali mercati europei (2026)",
     "source_germany": "Rethink Priorities: i gamberetti nella grande distribuzione tedesca (2026)",

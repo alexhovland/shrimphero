@@ -39,7 +39,6 @@ export default function About() {
             <li>{t('about.p', { p: v.p })}</li>
             <li>{t('about.n', { n: v.n })}</li>
         </ul>
-        <p>{t('about.same_logic')}</p>
         <h2>{t('about.sources')}</h2>
         <ul>
           <li>

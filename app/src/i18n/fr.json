@@ -116,7 +116,6 @@
     "p": "p = {p} : la part de la victoire due aux actions en magasin comme les autocollants. Une estimation.",
     "n": "N = {n} : autocollants nécessaires pour gagner. Une estimation.",
     "result": "{s} × {p} ÷ {n} = {per} crevettes par autocollant et par an.",
-    "same_logic": "C'est la méthode de la campagne Aldi, qui donnait 34 crevettes par action.",
     "sources": "Sources",
     "source_europe": "Rethink Priorities : le nombre de crevettes sur les grands marchés européens (2026)",
     "source_germany": "Rethink Priorities : les crevettes dans la grande distribution allemande (2026)",

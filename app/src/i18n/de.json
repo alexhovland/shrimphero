@@ -116,7 +116,6 @@
     "p": "p = {p}: der Anteil am Erfolg, der auf Aktionen in Filialen wie Aufkleber zurückgeht. Eine Schätzung.",
     "n": "N = {n}: Aufkleber, die es bis zum Erfolg braucht. Eine Schätzung.",
     "result": "{s} × {p} ÷ {n} = {per} Garnelen pro Aufkleber und Jahr.",
-    "same_logic": "Es ist dieselbe Methode wie bei der Aldi-Kampagne, die 34 Garnelen pro Aktion ergab.",
     "sources": "Quellen",
     "source_europe": "Rethink Priorities: Zahl der Garnelen in großen europäischen Märkten (2026)",
     "source_germany": "Rethink Priorities: Garnelen im deutschen Einzelhandel (2026)",
