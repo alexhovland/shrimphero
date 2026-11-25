@@ -14,7 +14,7 @@ export function Counter({ value, lang }: { value: number; lang: string }) {
     }
     done.current = true;
     const start = performance.now();
-    const duration = 900;
+    const duration = 550; // every animation on the site stays under 600 ms
     let frame = 0;
     const tick = (now: number) => {
       const k = Math.min(1, (now - start) / duration);
