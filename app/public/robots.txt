@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shrimphero.org/sitemap.xml
