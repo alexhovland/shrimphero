@@ -10,6 +10,7 @@ import { StorePicker } from '../components/StorePicker';
 import { Stepper } from '../components/Stepper';
 import { Turnstile } from '../components/Turnstile';
 import { Mascot } from '../components/Mascot';
+import { prefersReducedMotion } from '../lib/motion';
 
 const LAST_STORE = 'shrimphero-last-store';
 const NICK_ERRORS = ['nickname_too_short', 'nickname_too_long', 'nickname_characters', 'nickname_spacing', 'nickname_link', 'nickname_blocked', 'nickname_taken', 'no_nickname'];
@@ -44,7 +45,10 @@ export default function Log() {
   const needsNickname = ready && !me?.nickname;
 
   useEffect(() => {
-    if (done) doneTitle.current?.focus();
+    if (!done) return;
+    doneTitle.current?.focus();
+    // One short buzz with the stamp, on phones that can. Never with reduced motion.
+    if (!prefersReducedMotion()) navigator.vibrate?.(30);
   }, [done]);
 
   const chooseStore = (s: Store | null) => {
@@ -109,6 +113,8 @@ export default function Log() {
       <section className="block block--blue done" aria-labelledby="done-title">
         <div className="wrap--form">
           <Mascot rippleKey={done.stickers + date} />
+          {/* Decorative: the text below says the same. */}
+          <p className="stamp" aria-hidden="true">+{formatNumber(done.stickers, lang)}</p>
           <h1 id="done-title" ref={doneTitle} tabIndex={-1}>{t('log.done_title')}</h1>
           <p>
             {t('log.done_body', {
