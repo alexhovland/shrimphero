@@ -21,7 +21,7 @@ export function TabBar({ route }: { route: Route }) {
           key={r}
           href={href(r)}
           aria-current={pageOf(route) === r ? 'page' : undefined}
-          aria-label={short ? t(label) : undefined}
+          aria-label={short ? `${t(short)} – ${t(label)}` : undefined}
           onPointerDown={press}
           onAnimationEnd={(e) => e.currentTarget.classList.remove('press')}
         >

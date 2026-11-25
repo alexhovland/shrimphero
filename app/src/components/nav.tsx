@@ -4,7 +4,8 @@ import { IconHome, IconHow, IconMap, IconMine, IconPlus } from './Icons';
 
 // Main menu: the bottom bar on phones and the top menu on wide screens.
 // A tab is active on its own page and on routes that point into it (see pageOf in router.ts).
-// "short" is a shorter label for the narrow bottom bar; the full label is still read out.
+// "short" is a shorter label for the narrow bottom bar. Its name for screen readers and
+// voice control is "short – full label", so it starts with the word people see (WCAG 2.5.3).
 export const NAV: { route: Route; label: string; short?: string; Icon: ComponentType }[] = [
   { route: '/', label: 'nav.home', Icon: IconHome },
   { route: '/how', label: 'nav.how', short: 'nav.how_short', Icon: IconHow },
