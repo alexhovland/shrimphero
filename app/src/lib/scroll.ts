@@ -18,9 +18,14 @@ export function showSection(id: string, focusHeading = true): () => void {
   if (focusHeading) el.querySelector<HTMLElement>('h2[tabindex="-1"], h1[tabindex="-1"]')?.focus({ preventScroll: true });
 
   let stopped = false;
+  let frame = 0;
+  // Re-align on the next frame, not inside the observer callback: scrolling there can
+  // trigger more resize work in the same frame ("ResizeObserver loop" warnings in Safari).
   const ro = new ResizeObserver(() => {
-    if (stopped) return;
-    if (Math.abs(el.getBoundingClientRect().top - target()) > 2) align('auto');
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      if (!stopped && Math.abs(el.getBoundingClientRect().top - target()) > 2) align('auto');
+    });
   });
   ro.observe(document.body);
   const events = ['wheel', 'touchstart', 'keydown', 'pointerdown'] as const;
@@ -28,6 +33,7 @@ export function showSection(id: string, focusHeading = true): () => void {
     if (stopped) return;
     stopped = true;
     ro.disconnect();
+    cancelAnimationFrame(frame);
     events.forEach((e) => window.removeEventListener(e, stop, true));
     window.clearTimeout(timer);
   };
