@@ -3,6 +3,7 @@ import { useI18n } from './i18n';
 import { pageOf, sectionOf, useRoute, type Route } from './lib/router';
 import { prefersReducedMotion } from './lib/motion';
 import { showSection } from './lib/scroll';
+import { countPage } from './lib/stats';
 import { Header } from './components/Header';
 import { TabBar } from './components/TabBar';
 import { Footer } from './components/Footer';
@@ -55,6 +56,10 @@ export default function App() {
   useEffect(() => {
     document.title = title ? `${t(title)} · ShrimpHero` : 'ShrimpHero';
   }, [title, t]);
+
+  // One page view per route change, counted after the title above is set
+  // (effects run in order). A language change alone does not count again.
+  useEffect(() => countPage(route), [route]);
 
   // After a route change: show the route's section (focus on its heading), or go to
   // the top of the page and move focus to the new content for screen readers.
