@@ -12,7 +12,7 @@
     "why_body": "I gamberetti venduti da Lidl muoiono soffocati nel ghiaccio, pienamente coscienti. In Gran Bretagna Lidl ha promesso di cambiare. Altrove no.",
     "petition": "Firma la petizione",
     "how_title": "Come funziona",
-    "step1": "Scarica l'adesivo e stampalo.",
+    "step1": "Ordina gli adesivi gratuiti. Te li spediamo noi.",
     "step2": "Attaccalo su una confezione di gamberetti da Lidl.",
     "step3": "Registralo qui. I tuoi adesivi compaiono sulla mappa.",
     "how_more": "Tutti i passi e le domande"
@@ -22,8 +22,8 @@
     "lead": "Gesti semplici, grande impatto.",
     "why_title": "Perché funziona?",
     "why_body": "Un adesivo su una confezione di gamberi parla a ogni cliente che la prende in mano. Dice a loro, e a Lidl, che ai clienti importa come questi gamberi vengono allevati e uccisi. Anche il personale del negozio vede gli adesivi e ne parla, così il messaggio arriva alle persone dentro l'azienda. È un modo pacifico per chiedere a Lidl di fare meglio per i gamberi.",
-    "step1_title": "Procurati gli adesivi",
-    "step1_body": "Scarica e stampa da questo sito l'adesivo nella tua lingua. Usa carta adesiva removibile.",
+    "step1_title": "Ordina i tuoi adesivi",
+    "step1_body": "Ordinali gratis su questo sito. Te li spediamo in 1 o 2 settimane.",
     "step2_title": "Vai in un Lidl vicino a te",
     "step2_body": "Vai al banco frigo di pesce e frutti di mare e cerca i gamberi d'allevamento. Spesso hanno il logo ASC.",
     "step3_title": "Attacca gli adesivi",
@@ -142,9 +142,6 @@
     "order": "Ordina gli adesivi",
     "tally_note": "Il modulo d'ordine è gestito da Tally. Il tuo indirizzo arriva solo a chi spedisce gli adesivi, mai a questo sito.",
     "soon": "Gli ordini apriranno presto.",
-    "language": "Lingua dell'adesivo",
-    "download": "Scarica l'adesivo",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Solo sulle confezioni di gamberetti da Lidl."
   },
   "about": {
@@ -187,7 +184,7 @@
     "contact": "Contatto: {email}",
     "host": "Ospitato da {host}."
   },
-  "footer": { "about": "Come contiamo", "privacy": "Privacy e note legali", "stickers": "Scarica gli adesivi", "osm": "© contributori di OpenStreetMap" },
+  "footer": { "about": "Come contiamo", "privacy": "Privacy e note legali", "stickers": "Ordina gli adesivi", "osm": "© contributori di OpenStreetMap" },
   "common": { "loading": "Caricamento…", "yes": "Sì", "no": "No", "cancel": "Annulla", "new_tab": "(si apre in una nuova scheda)", "retry": "Riprova" },
   "errors": {
     "nickname_too_short": "Nickname troppo corto: minimo 3 caratteri.",

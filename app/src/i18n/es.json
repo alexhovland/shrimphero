@@ -12,7 +12,7 @@
     "why_body": "Las gambas que vende Lidl mueren asfixiadas en hielo, plenamente conscientes. En Gran Bretaña, Lidl ha prometido cambiarlo. En el resto, no.",
     "petition": "Firmar la petición",
     "how_title": "Cómo funciona",
-    "step1": "Descarga la pegatina e imprímela.",
+    "step1": "Pide pegatinas gratis. Te las enviamos.",
     "step2": "Pégala en una caja de gambas en Lidl.",
     "step3": "Regístrala aquí. Tus pegatinas aparecen en el mapa.",
     "how_more": "Todos los pasos y las preguntas"
@@ -22,8 +22,8 @@
     "lead": "Gestos simples, gran impacto.",
     "why_title": "¿Por qué funciona?",
     "why_body": "Una pegatina en una caja de gambas le habla a cada cliente que la coge. Les dice, a ellos y a Lidl, que a los clientes les importa cómo se crían y se matan estas gambas. El personal de la tienda también ve las pegatinas y habla de ellas, así el mensaje llega a la gente dentro de la empresa. Es una forma pacífica de pedirle a Lidl que lo haga mejor con las gambas.",
-    "step1_title": "Consigue tus pegatinas",
-    "step1_body": "Descarga e imprime desde esta web la pegatina en tu idioma. Usa papel adhesivo removible.",
+    "step1_title": "Pide tus pegatinas",
+    "step1_body": "Pídelas gratis en esta web. Te las enviamos en 1 o 2 semanas.",
     "step2_title": "Ve a un Lidl cerca de ti",
     "step2_body": "Ve a la sección de pescado y marisco refrigerado y busca las gambas de criadero. Suelen llevar el logo ASC.",
     "step3_title": "Pon tus pegatinas",
@@ -142,9 +142,6 @@
     "order": "Pide pegatinas",
     "tally_note": "El formulario de pedido lo gestiona Tally. Tu dirección llega solo a quienes envían las pegatinas, nunca a esta web.",
     "soon": "Los pedidos abrirán pronto.",
-    "language": "Idioma de la pegatina",
-    "download": "Descargar la pegatina",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Solo en cajas de gambas en Lidl."
   },
   "about": {
@@ -187,7 +184,7 @@
     "contact": "Contacto: {email}",
     "host": "Alojado por {host}."
   },
-  "footer": { "about": "Cómo contamos", "privacy": "Privacidad y aviso legal", "stickers": "Conseguir pegatinas", "osm": "© colaboradores de OpenStreetMap" },
+  "footer": { "about": "Cómo contamos", "privacy": "Privacidad y aviso legal", "stickers": "Pide pegatinas", "osm": "© colaboradores de OpenStreetMap" },
   "common": { "loading": "Cargando…", "yes": "Sí", "no": "No", "cancel": "Cancelar", "new_tab": "(se abre en una pestaña nueva)", "retry": "Reintentar" },
   "errors": {
     "nickname_too_short": "El apodo es demasiado corto: mínimo 3 caracteres.",

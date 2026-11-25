@@ -14,7 +14,7 @@ The step-by-step launch guide is in [LAUNCH-GUIDE.md](LAUNCH-GUIDE.md). This fil
 | `app/src/site-config.ts` | **Edit before launch.** Contact email, optional postal address, host, petition links, sticker list. |
 | `app/src/i18n/` | All interface text, one file per language (en, fr, de, it, pl, es). |
 | `app/src/assets/mascot.svg` | The shrimp mascot. Currently a placeholder drawing (see below). |
-| `app/public/stickers/` | The nine sticker PNGs people can download. Metadata removed. |
+| Sticker orders | People order stickers through an outside form (Tally) that the Get stickers page links to. The site never sees an address. Set the link in `app/src/site-config.ts`: `ORDER_FORM_LINKS` (one per language) or `ORDER_FORM_DEFAULT`; leave both empty to show "Ordering opens soon". |
 | `app/tests/` | Automatic browser tests and a fake database used only by those tests. |
 | `supabase/migrations/` | The database, in six numbered SQL files. Paste them into Supabase in order. |
 | `supabase/tests/security.sql` | A check that tries to break every database rule. Must print "all checks passed". |
@@ -83,7 +83,7 @@ Where the brief was open, I picked the simplest safe option:
 All run on the production build, with a fake database (`app/tests/mock-server.mjs`) because the real one doesn't exist yet.
 
 - **Database:** `supabase/tests/security.sql` passes on a local Postgres with the six migrations. I also broke rules on purpose to confirm the test catches them.
-- **Browser tests:** 26 Playwright tests pass. They log stickers on a 390 px phone screen in English, French and Polish (including Polish plural forms), check the right petition link per language, refuse a reserved nickname, require a store, switch and remember the language, download all nine stickers, and walk through delete entry, report and delete all.
+- **Browser tests:** 26 Playwright tests pass. They log stickers on a 390 px phone screen in English, French and Polish (including Polish plural forms), check the right petition link per language, refuse a reserved nickname, require a store, switch and remember the language, check the Get stickers page with and without an order link, and walk through delete entry, report and delete all.
 - **Accessibility:** an axe scan of every screen at 390 px and 1280 px, plus the signed-in screens, finds no serious or critical issues (WCAG 2.2 AA rules, including 24 px target size; buttons are 48 px). No screen scrolls sideways. Colour pairs used for text are all 4.5:1 or better (white on red 4.75:1, small red text uses `#C8000F` at 5.4:1).
 - **Security policy:** no Content-Security-Policy violations on any screen.
 - **Lighthouse (mobile):**

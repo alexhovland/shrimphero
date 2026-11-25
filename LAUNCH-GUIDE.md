@@ -103,7 +103,7 @@ You upload through the GitHub website, in the ShrimpHero browser profile. That w
 - [ ] Open your `shrimphero` repository on GitHub. Click **uploading an existing file** (on an empty repository) or **Add file**, then **Upload files**.
 - [ ] Open the unzipped `shrimphero` folder on your computer, select everything inside it (`app`, `scripts`, `SETUP`, `supabase`, `README.md`, `LAUNCH-GUIDE.md`, `LICENSE`) and drag it onto the page. Wait until every file is listed.
 - [ ] Commit message: `First upload`. Keep **Commit directly to the main branch**. Click **Commit changes**.
-- [ ] Check the repository now shows the folders `app`, `scripts`, `SETUP` and `supabase`, and that `app/public/stickers` holds nine PNG files.
+- [ ] Check the repository now shows the folders `app`, `scripts`, `SETUP` and `supabase`, and that `app/public` holds `CNAME` and `favicon.svg`.
 
 **The two workflow files** (hidden folders are usually skipped by drag and drop)
 
@@ -140,11 +140,11 @@ On your phone, in a private window:
 
 - [ ] Open the site. The totals show 0, the shrimp's antennae move slowly.
 - [ ] **Log** 3 stickers in a store near you with the nickname `test run`. You see "Saved" and a petition button. The robot check either passes silently or asks for one click.
-- [ ] The home total shows 3, the map shows a pin with 3, the leaderboard shows `test run`.
+- [ ] The home total shows 3, the map shows a pin with 3, and the ranking under the map shows `test run`.
 - [ ] Try 60 stickers: the counter stops at 50.
 - [ ] Try the nickname `www.test.com` in another private window: it is refused.
 - [ ] Try the nickname `Lidl Official`: it is refused.
-- [ ] **Get stickers**: download two languages and check both images open.
+- [ ] **Get stickers**: the Order stickers button opens the order form (or shows "Ordering opens soon").
 - [ ] Switch the language at the top to each of the six languages and look at every screen.
 - [ ] Turn on "Reduce motion" on the phone (iPhone: Settings, Accessibility, Motion; Android: Settings, Accessibility, Remove animations). The shrimp stays still.
 - [ ] **Mine**: delete the test entry, then **Delete everything**. The totals go back to 0.

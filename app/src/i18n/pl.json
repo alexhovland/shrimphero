@@ -12,7 +12,7 @@
     "why_body": "Krewetki sprzedawane w Lidlu duszą się w lodzie, w pełni świadome. W Wielkiej Brytanii Lidl obiecał to zmienić. Nigdzie indziej.",
     "petition": "Podpisz petycję",
     "how_title": "Jak to działa",
-    "step1": "Pobierz naklejkę i ją wydrukuj.",
+    "step1": "Zamów darmowe naklejki. Wyślemy je do ciebie.",
     "step2": "Naklej ją na opakowanie krewetek w Lidlu.",
     "step3": "Zapisz to tutaj. Twoje naklejki pojawią się na mapie.",
     "how_more": "Wszystkie kroki i pytania"
@@ -22,8 +22,8 @@
     "lead": "Proste działania, duży wpływ.",
     "why_title": "Dlaczego to działa?",
     "why_body": "Naklejka na opakowaniu krewetek mówi do każdej osoby, która je podniesie. Pokazuje jej i Lidlowi, że klientom zależy na tym, jak te krewetki są hodowane i zabijane. Pracownicy sklepu też widzą naklejki i o nich rozmawiają, więc przekaz trafia do ludzi wewnątrz firmy. To pokojowy sposób, by poprosić Lidla o lepsze traktowanie krewetek.",
-    "step1_title": "Zdobądź naklejki",
-    "step1_body": "Pobierz i wydrukuj z tej strony naklejkę w swoim języku. Użyj papieru z klejem odklejanym.",
+    "step1_title": "Zamów naklejki",
+    "step1_body": "Zamów je za darmo na tej stronie. Wyślemy je do ciebie w ciągu 1–2 tygodni.",
     "step2_title": "Idź do Lidla w pobliżu",
     "step2_body": "Podejdź do lodówek z rybami i owocami morza i znajdź krewetki hodowlane. Często mają logo ASC.",
     "step3_title": "Przyklej naklejki",
@@ -153,9 +153,6 @@
     "order": "Zamów naklejki",
     "tally_note": "Formularz zamówienia obsługuje Tally. Twój adres trafia tylko do osób, które wysyłają naklejki, nigdy do tej strony.",
     "soon": "Zamówienia ruszą wkrótce.",
-    "language": "Język naklejki",
-    "download": "Pobierz naklejkę",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Tylko na opakowaniach krewetek w Lidlu."
   },
   "about": {
@@ -198,7 +195,7 @@
     "contact": "Kontakt: {email}",
     "host": "Hosting: {host}."
   },
-  "footer": { "about": "Jak liczymy", "privacy": "Prywatność i nota prawna", "stickers": "Pobierz naklejki", "osm": "© współtwórcy OpenStreetMap" },
+  "footer": { "about": "Jak liczymy", "privacy": "Prywatność i nota prawna", "stickers": "Zamów naklejki", "osm": "© współtwórcy OpenStreetMap" },
   "common": { "loading": "Ładowanie…", "yes": "Tak", "no": "Nie", "cancel": "Anuluj", "new_tab": "(otwiera się w nowej karcie)", "retry": "Spróbuj ponownie" },
   "errors": {
     "nickname_too_short": "Pseudonim jest za krótki: minimum 3 znaki.",

@@ -12,7 +12,7 @@
     "why_body": "Les crevettes vendues chez Lidl meurent étouffées dans la glace, pleinement conscientes. En Grande-Bretagne, Lidl a promis de changer cela. Ailleurs, non.",
     "petition": "Signer la pétition",
     "how_title": "Comment ça marche",
-    "step1": "Téléchargez l'autocollant et imprimez-le.",
+    "step1": "Commandez des autocollants gratuits. On vous les envoie.",
     "step2": "Collez-le sur une boîte de crevettes chez Lidl.",
     "step3": "Déclarez-le ici. Vos autocollants apparaissent sur la carte.",
     "how_more": "Toutes les étapes et les questions"
@@ -22,8 +22,8 @@
     "lead": "Des gestes simples, un grand impact.",
     "why_title": "Pourquoi ça marche ?",
     "why_body": "Un autocollant sur une boîte de crevettes parle à chaque client qui la prend en main. Il leur dit, à eux et à Lidl, que les clients se soucient de la façon dont ces crevettes sont élevées et tuées. Le personnel du magasin voit aussi les autocollants et en parle, et le message remonte ainsi jusqu'à l'intérieur de l'entreprise. C'est une façon pacifique de demander à Lidl de mieux faire pour les crevettes.",
-    "step1_title": "Procurez-vous des autocollants",
-    "step1_body": "Téléchargez et imprimez l'autocollant dans votre langue sur ce site. Utilisez du papier autocollant repositionnable.",
+    "step1_title": "Commandez vos autocollants",
+    "step1_body": "Commandez-les gratuitement sur ce site. Nous vous les envoyons en 1 à 2 semaines.",
     "step2_title": "Allez dans un Lidl près de chez vous",
     "step2_body": "Rendez-vous au rayon frais poissons et fruits de mer et cherchez les crevettes d'élevage. Elles portent souvent le logo ASC.",
     "step3_title": "Posez vos autocollants",
@@ -142,9 +142,6 @@
     "order": "Commander des autocollants",
     "tally_note": "Le formulaire de commande est géré par Tally. Votre adresse va uniquement aux personnes qui envoient les autocollants, jamais à ce site.",
     "soon": "Les commandes ouvrent bientôt.",
-    "language": "Langue de l'autocollant",
-    "download": "Télécharger l'autocollant",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Uniquement sur les boîtes de crevettes chez Lidl."
   },
   "about": {
@@ -187,7 +184,7 @@
     "contact": "Contact : {email}",
     "host": "Hébergé par {host}."
   },
-  "footer": { "about": "Comment on compte", "privacy": "Confidentialité et mentions légales", "stickers": "Obtenir les autocollants", "osm": "© les contributeurs d'OpenStreetMap" },
+  "footer": { "about": "Comment on compte", "privacy": "Confidentialité et mentions légales", "stickers": "Commander des autocollants", "osm": "© les contributeurs d'OpenStreetMap" },
   "common": { "loading": "Chargement…", "yes": "Oui", "no": "Non", "cancel": "Annuler", "new_tab": "(s'ouvre dans un nouvel onglet)", "retry": "Réessayer" },
   "errors": {
     "nickname_too_short": "Pseudo trop court : 3 caractères minimum.",

@@ -12,7 +12,7 @@
     "why_body": "Shrimp sold at Lidl are left to suffocate in ice, fully conscious. In Great Britain, Lidl has promised to change this. Everywhere else, it hasn't.",
     "petition": "Sign the petition",
     "how_title": "How it works",
-    "step1": "Download the sticker and print it.",
+    "step1": "Order free stickers. We post them to you.",
     "step2": "Stick it on a shrimp box at Lidl.",
     "step3": "Log it here. Your stickers show up on the map.",
     "how_more": "All the steps and questions"
@@ -22,8 +22,8 @@
     "lead": "Simple actions, big impact.",
     "why_title": "Why does this work?",
     "why_body": "A sticker on a shrimp box speaks to every shopper who picks it up. It tells them, and Lidl, that customers care about how these shrimp are farmed and killed. Store staff also see the stickers and talk about them, so the message reaches the people inside the company. It's a peaceful way to ask Lidl to do better for shrimp.",
-    "step1_title": "Get your stickers",
-    "step1_body": "Download and print the sticker in your language from this site. Use removable sticker paper.",
+    "step1_title": "Order your stickers",
+    "step1_body": "Order them for free on this site. We post them to you in 1 to 2 weeks.",
     "step2_title": "Visit a Lidl near you",
     "step2_body": "Go to the chilled fish and seafood section and find the farmed shrimp. They often carry an ASC logo.",
     "step3_title": "Place your stickers",
@@ -142,9 +142,6 @@
     "order": "Order stickers",
     "tally_note": "The order form is run by Tally. Your address goes only to the people who post the stickers, never to this site.",
     "soon": "Ordering opens soon.",
-    "language": "Sticker language",
-    "download": "Download sticker",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Only on shrimp boxes at Lidl."
   },
   "about": {
@@ -187,7 +184,7 @@
     "contact": "Contact: {email}",
     "host": "Hosted by {host}."
   },
-  "footer": { "about": "How we count", "privacy": "Privacy and imprint", "stickers": "Get stickers", "osm": "© OpenStreetMap contributors" },
+  "footer": { "about": "How we count", "privacy": "Privacy and imprint", "stickers": "Order stickers", "osm": "© OpenStreetMap contributors" },
   "common": { "loading": "Loading…", "yes": "Yes", "no": "No", "cancel": "Cancel", "new_tab": "(opens in a new tab)", "retry": "Try again" },
   "errors": {
     "nickname_too_short": "The nickname is too short: 3 characters minimum.",

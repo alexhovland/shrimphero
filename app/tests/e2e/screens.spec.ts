@@ -35,18 +35,27 @@ for (const size of SIZES) {
   });
 }
 
-test('sticker downloads exist for all nine languages', async ({ page, request }) => {
-  await page.goto('./#/stickers');
-  await page.getByRole('heading', { name: 'Get stickers' }).waitFor();
-  const options = await page.getByLabel('Sticker language').locator('option').allTextContents();
-  expect(options).toHaveLength(9);
-  for (const value of await page.getByLabel('Sticker language').locator('option').evaluateAll((els) => els.map((e) => (e as HTMLOptionElement).value))) {
-    await page.getByLabel('Sticker language').selectOption(value);
-    const href = await page.getByRole('link', { name: 'Download sticker' }).getAttribute('href');
-    const res = await request.get(new URL(href!, page.url()).toString());
-    expect(res.status(), href!).toBe(200);
-    expect(res.headers()['content-type']).toContain('image/png');
-  }
+test.describe('Get stickers', () => {
+  test.use({ locale: 'en-GB' });
+
+  test('without an order link it says ordering opens soon, with no link', async ({ page }) => {
+    await page.goto('./#/stickers');
+    await expect(page.getByRole('heading', { level: 1, name: 'Order stickers' })).toBeVisible();
+    await expect(page.getByText('Ordering opens soon.')).toBeVisible();
+    await expect(page.getByRole('link', { name: /Order stickers/ })).toHaveCount(0);
+    await expect(page.locator('main a[download], main select')).toHaveCount(0);
+  });
+
+  test('with an order link it opens the form in a new tab', async ({ page }) => {
+    // Test builds only: sets the order form link (see src/lib/order.ts).
+    await page.addInitScript(() => localStorage.setItem('shrimphero-test-order-form', 'https://tally.so/r/test-form'));
+    await page.goto('./#/stickers');
+    const order = page.getByRole('link', { name: /Order stickers/ });
+    await expect(order).toHaveAttribute('href', 'https://tally.so/r/test-form');
+    await expect(order).toHaveAttribute('target', '_blank');
+    await expect(order).toHaveAttribute('rel', 'noopener noreferrer');
+    await expect(page.getByText('Ordering opens soon.')).toHaveCount(0);
+  });
 });
 
 test.describe('signed-in screens', () => {

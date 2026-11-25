@@ -12,7 +12,7 @@
     "why_body": "Garnelen, die Lidl verkauft, ersticken bei vollem Bewusstsein auf Eis. In Großbritannien hat Lidl versprochen, das zu ändern. Überall sonst nicht.",
     "petition": "Petition unterschreiben",
     "how_title": "So geht's",
-    "step1": "Aufkleber herunterladen und drucken.",
+    "step1": "Bestell kostenlose Aufkleber. Wir schicken sie dir.",
     "step2": "Bei Lidl auf eine Garnelenpackung kleben.",
     "step3": "Hier eintragen. Deine Aufkleber erscheinen auf der Karte.",
     "how_more": "Alle Schritte und Fragen"
@@ -22,8 +22,8 @@
     "lead": "Kleine Aktion, große Wirkung.",
     "why_title": "Warum funktioniert das?",
     "why_body": "Ein Sticker auf einer Garnelenpackung spricht jede Person an, die sie in die Hand nimmt. Er zeigt ihnen und Lidl, dass Kundinnen und Kunden wichtig ist, wie diese Garnelen gezüchtet und getötet werden. Auch das Personal sieht die Sticker und spricht darüber, so erreicht die Botschaft die Menschen im Unternehmen. Es ist ein friedlicher Weg, Lidl um mehr Schutz für Garnelen zu bitten.",
-    "step1_title": "Hol dir Sticker",
-    "step1_body": "Lade den Sticker in deiner Sprache hier herunter und drucke ihn aus. Nimm ablösbares Stickerpapier.",
+    "step1_title": "Bestell deine Sticker",
+    "step1_body": "Bestell sie kostenlos auf dieser Seite. Wir schicken sie dir in 1 bis 2 Wochen.",
     "step2_title": "Geh in einen Lidl in deiner Nähe",
     "step2_body": "Geh zur Kühltheke mit Fisch und Meeresfrüchten und such die Zuchtgarnelen. Sie tragen oft das ASC-Logo.",
     "step3_title": "Bring deine Sticker an",
@@ -142,9 +142,6 @@
     "order": "Aufkleber bestellen",
     "tally_note": "Das Bestellformular läuft über Tally. Deine Adresse geht nur an die Leute, die die Aufkleber verschicken, nie an diese Website.",
     "soon": "Bestellen ist bald möglich.",
-    "language": "Sprache des Aufklebers",
-    "download": "Aufkleber herunterladen",
-    "file": "PNG, 1181 × 1181 px, 300 dpi",
     "where": "Nur auf Garnelenpackungen bei Lidl."
   },
   "about": {
@@ -187,7 +184,7 @@
     "contact": "Kontakt: {email}",
     "host": "Gehostet von {host}."
   },
-  "footer": { "about": "So rechnen wir", "privacy": "Datenschutz und Impressum", "stickers": "Aufkleber holen", "osm": "© OpenStreetMap-Mitwirkende" },
+  "footer": { "about": "So rechnen wir", "privacy": "Datenschutz und Impressum", "stickers": "Aufkleber bestellen", "osm": "© OpenStreetMap-Mitwirkende" },
   "common": { "loading": "Wird geladen…", "yes": "Ja", "no": "Nein", "cancel": "Abbrechen", "new_tab": "(öffnet in neuem Tab)", "retry": "Noch einmal" },
   "errors": {
     "nickname_too_short": "Der Spitzname ist zu kurz: mindestens 3 Zeichen.",

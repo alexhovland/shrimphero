@@ -22,19 +22,6 @@ export const PETITION_DEFAULT = 'https://lidlshrimp.com/';
 export const ORDER_FORM_LINKS: Record<string, string> = {};
 export const ORDER_FORM_DEFAULT = '';
 
-// Sticker files in public/stickers. "label" is the language name shown in the picker.
-export const STICKERS = [
-  { file: 'sticker-fr.png', code: 'fr', label: 'Français' },
-  { file: 'sticker-de.png', code: 'de', label: 'Deutsch' },
-  { file: 'sticker-it.png', code: 'it', label: 'Italiano' },
-  { file: 'sticker-pl.png', code: 'pl', label: 'Polski' },
-  { file: 'sticker-en.png', code: 'en', label: 'English' },
-  { file: 'sticker-nl.png', code: 'nl', label: 'Nederlands' },
-  { file: 'sticker-nl-red.png', code: 'nl-red', label: 'Nederlands (rood)' },
-  { file: 'sticker-cs.png', code: 'cs', label: 'Čeština' },
-  { file: 'sticker-hu.png', code: 'hu', label: 'Magyar' },
-] as const;
-
 export const SOURCES = {
   europe: 'https://rethinkpriorities.org/research-area/estimating-the-number-of-shrimp-in-major-european-markets/',
   germany: 'https://rethinkpriorities.org/wp-content/uploads/2026/09/Estimating-The-Number-Of-Shrimp-In-The-German-Retail-Market.pdf',
