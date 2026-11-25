@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "how": "So funktioniert's", "log": "Eintragen", "map": "Karte", "leaderboard": "Rangliste", "me": "Meine", "menu": "Hauptmenü" },
+  "nav": { "home": "Start", "how": "So funktioniert's", "log": "Eintragen", "map": "Karte", "me": "Meine", "menu": "Hauptmenü" },
   "header": { "language": "Sprache", "skip": "Zum Inhalt", "home": "ShrimpHero, Startseite" },
   "home": {
     "title": "Ein Aufkleber auf jede Garnelen­packung bei Lidl",
@@ -79,8 +79,12 @@
     "see_map": "Zur Karte"
   },
   "map": {
-    "title": "Wo die Aufkleber kleben",
+    "page_title": "Karte und Rangliste",
     "note": "Jeder Punkt ist eine Lidl-Filiale mit ihrer Aufkleber-Summe. Keine Namen, keine Daten.",
+    "see_ranking": "Zur Rangliste",
+    "gesture_windows": "Strg + Mausrad, um die Karte zu zoomen",
+    "gesture_mac": "⌘ + Scrollen, um die Karte zu zoomen",
+    "gesture_mobile": "Mit zwei Fingern die Karte bewegen",
     "loading": "Karte wird geladen…",
     "empty": "Noch keine Aufkleber eingetragen.",
     "failed": "Die Karte hat nicht geladen. Prüf deine Verbindung und versuch es noch einmal.",

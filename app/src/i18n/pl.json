@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Start", "how": "Jak to działa", "log": "Dodaj", "map": "Mapa", "leaderboard": "Ranking", "me": "Moje", "menu": "Menu główne" },
+  "nav": { "home": "Start", "how": "Jak to działa", "log": "Dodaj", "map": "Mapa", "me": "Moje", "menu": "Menu główne" },
   "header": { "language": "Język", "skip": "Przejdź do treści", "home": "ShrimpHero, strona główna" },
   "home": {
     "title": "Naklejka na każdym opakowaniu krewetek w Lidlu",
@@ -81,8 +81,12 @@
     "see_map": "Zobacz mapę"
   },
   "map": {
-    "title": "Gdzie są naklejki",
+    "page_title": "Mapa i ranking",
     "note": "Każdy punkt to sklep Lidl z liczbą naklejek. Bez imion, bez dat.",
+    "see_ranking": "Zobacz ranking",
+    "gesture_windows": "Użyj Ctrl + kółka myszy, aby powiększyć mapę",
+    "gesture_mac": "Użyj ⌘ + przewijania, aby powiększyć mapę",
+    "gesture_mobile": "Przesuń mapę dwoma palcami",
     "loading": "Ładowanie mapy…",
     "empty": "Nie zapisano jeszcze żadnych naklejek.",
     "failed": "Mapa się nie załadowała. Sprawdź połączenie i spróbuj ponownie.",

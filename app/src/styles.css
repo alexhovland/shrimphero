@@ -278,7 +278,7 @@ a:hover {
   bottom: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background: var(--ink);
   color: var(--cream);
   --focus: var(--yellow);
@@ -822,11 +822,18 @@ a:hover {
 
 .map-box {
   position: relative;
-  height: min(70vh, 640px);
-  min-height: 360px;
+  /* Phones: a shorter map, so the ranking is clearly there below it. */
+  height: min(52vh, 460px);
+  min-height: 300px;
   background: #e6e2d8;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
+}
+@media (min-width: 768px) {
+  .map-box {
+    height: min(70vh, 640px);
+    min-height: 360px;
+  }
 }
 .map-status {
   position: absolute;
@@ -1082,8 +1089,23 @@ a:hover {
   color: var(--muted);
 }
 .block.map-credit {
-  padding-top: var(--s4);
-  padding-bottom: var(--s8);
+  padding-top: var(--s2);
+  padding-bottom: 0;
+}
+.map-credit .credit {
+  margin: 0;
+}
+.see-ranking {
+  padding-left: 0;
+  font-family: var(--head);
+  font-weight: 700;
+}
+/* A section that a link scrolls to (#/leaderboard, #/about): a little air above its top edge. */
+.section-target {
+  scroll-margin-top: var(--s2);
+}
+.section-target h2:focus {
+  outline: none;
 }
 .map-box .map-canvas {
   position: absolute;

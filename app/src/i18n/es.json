@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Inicio", "how": "Cómo funciona", "log": "Registrar", "map": "Mapa", "leaderboard": "Ranking", "me": "Las mías", "menu": "Menú principal" },
+  "nav": { "home": "Inicio", "how": "Cómo funciona", "log": "Registrar", "map": "Mapa", "me": "Las mías", "menu": "Menú principal" },
   "header": { "language": "Idioma", "skip": "Ir al contenido", "home": "ShrimpHero, inicio" },
   "home": {
     "title": "Una pegatina en cada caja de gambas de Lidl",
@@ -79,8 +79,12 @@
     "see_map": "Ver el mapa"
   },
   "map": {
-    "title": "Dónde están las pegatinas",
+    "page_title": "Mapa y ranking",
     "note": "Cada punto es una tienda Lidl con su total de pegatinas. Sin nombres, sin fechas.",
+    "see_ranking": "Ver el ranking",
+    "gesture_windows": "Usa Ctrl + rueda para hacer zoom en el mapa",
+    "gesture_mac": "Usa ⌘ + desplazamiento para hacer zoom en el mapa",
+    "gesture_mobile": "Usa dos dedos para mover el mapa",
     "loading": "Cargando el mapa…",
     "empty": "Todavía no hay pegatinas registradas.",
     "failed": "El mapa no se ha cargado. Revisa tu conexión y vuelve a intentarlo.",

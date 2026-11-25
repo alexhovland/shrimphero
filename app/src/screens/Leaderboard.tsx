@@ -7,7 +7,9 @@ import { useSession } from '../lib/session';
 
 type ReportState = { nickname: string; step: 'confirm' | 'done' | 'login' | 'error'; message?: string };
 
-export default function Leaderboard() {
+// The ranking: top 50 nicknames, "your rank" and reporting. Shown under the map
+// (MapScreen), where #/leaderboard scrolls to it.
+export function RankingSection() {
   const { t, lang } = useI18n();
   const { session, me, refreshMe } = useSession();
   const [rows, setRows] = useState<LeaderRow[] | null>(null);
@@ -57,9 +59,9 @@ export default function Leaderboard() {
   };
 
   return (
-    <section className="block block--cream" aria-labelledby="lb-title">
+    <section id="ranking" className="block block--cream section-target" aria-labelledby="lb-title">
       <div className="wrap">
-        <h1 id="lb-title">{t('leaderboard.title')}</h1>
+        <h2 id="lb-title" tabIndex={-1}>{t('leaderboard.title')}</h2>
         <p className="my-rank">
           {me?.rank ? (
             t('leaderboard.your_rank', { count: me.total, rank: me.rank, total: formatNumber(me.total, lang) })

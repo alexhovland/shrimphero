@@ -1,5 +1,5 @@
 import { useI18n, LANGUAGES, type Lang } from '../i18n';
-import { href, type Route } from '../lib/router';
+import { href, pageOf, type Route } from '../lib/router';
 import { NAV } from './nav';
 
 export function Header({ route }: { route: Route }) {
@@ -15,7 +15,7 @@ export function Header({ route }: { route: Route }) {
         </a>
         <nav className="header-nav" aria-label={t('nav.menu')}>
           {NAV.map((item) => (
-            <a key={item.route} href={href(item.route)} aria-current={route === item.route ? 'page' : undefined}>
+            <a key={item.route} href={href(item.route)} aria-current={pageOf(route) === item.route ? 'page' : undefined}>
               {t(item.label)}
             </a>
           ))}

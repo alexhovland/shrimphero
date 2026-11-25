@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Accueil", "how": "Comment ça marche", "log": "Déclarer", "map": "Carte", "leaderboard": "Classement", "me": "Les miens", "menu": "Menu principal" },
+  "nav": { "home": "Accueil", "how": "Comment ça marche", "log": "Déclarer", "map": "Carte", "me": "Les miens", "menu": "Menu principal" },
   "header": { "language": "Langue", "skip": "Aller au contenu", "home": "ShrimpHero, accueil" },
   "home": {
     "title": "Un autocollant sur chaque boîte de crevettes Lidl",
@@ -79,8 +79,12 @@
     "see_map": "Voir la carte"
   },
   "map": {
-    "title": "Où sont les autocollants",
+    "page_title": "Carte et classement",
     "note": "Chaque point est un magasin Lidl avec son total d'autocollants. Pas de noms, pas de dates.",
+    "see_ranking": "Voir le classement",
+    "gesture_windows": "Ctrl + molette pour zoomer sur la carte",
+    "gesture_mac": "⌘ + défilement pour zoomer sur la carte",
+    "gesture_mobile": "Utilisez deux doigts pour déplacer la carte",
     "loading": "Chargement de la carte…",
     "empty": "Aucun autocollant déclaré pour l'instant.",
     "failed": "La carte ne s'est pas chargée. Vérifiez votre connexion et réessayez.",

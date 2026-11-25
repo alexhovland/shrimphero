@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "how": "Come funziona", "log": "Registra", "map": "Mappa", "leaderboard": "Classifica", "me": "I miei", "menu": "Menu principale" },
+  "nav": { "home": "Home", "how": "Come funziona", "log": "Registra", "map": "Mappa", "me": "I miei", "menu": "Menu principale" },
   "header": { "language": "Lingua", "skip": "Vai al contenuto", "home": "ShrimpHero, home" },
   "home": {
     "title": "Un adesivo su ogni confezione di gamberetti Lidl",
@@ -79,8 +79,12 @@
     "see_map": "Vedi la mappa"
   },
   "map": {
-    "title": "Dove sono gli adesivi",
+    "page_title": "Mappa e classifica",
     "note": "Ogni punto è un negozio Lidl con il suo totale di adesivi. Niente nomi, niente date.",
+    "see_ranking": "Vedi la classifica",
+    "gesture_windows": "Usa Ctrl + rotella per ingrandire la mappa",
+    "gesture_mac": "Usa ⌘ + scorrimento per ingrandire la mappa",
+    "gesture_mobile": "Usa due dita per spostare la mappa",
     "loading": "Caricamento della mappa…",
     "empty": "Ancora nessun adesivo registrato.",
     "failed": "La mappa non si è caricata. Controlla la connessione e riprova.",

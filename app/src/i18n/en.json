@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "how": "How it works", "log": "Log", "map": "Map", "leaderboard": "Ranking", "me": "Mine", "menu": "Main menu" },
+  "nav": { "home": "Home", "how": "How it works", "log": "Log", "map": "Map", "me": "Mine", "menu": "Main menu" },
   "header": { "language": "Language", "skip": "Skip to content", "home": "ShrimpHero, home" },
   "home": {
     "title": "A sticker on every Lidl shrimp box",
@@ -79,8 +79,12 @@
     "see_map": "See the map"
   },
   "map": {
-    "title": "Where the stickers are",
+    "page_title": "Map and ranking",
     "note": "Each pin is a Lidl store with its sticker total. No names, no dates.",
+    "see_ranking": "See the ranking",
+    "gesture_windows": "Use Ctrl + scroll to zoom the map",
+    "gesture_mac": "Use ⌘ + scroll to zoom the map",
+    "gesture_mobile": "Use two fingers to move the map",
     "loading": "Loading the map…",
     "empty": "No stickers logged yet.",
     "failed": "The map didn't load. Check your connection and try again.",

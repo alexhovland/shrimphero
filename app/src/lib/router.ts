@@ -4,18 +4,23 @@ import { useEffect, useState } from 'react';
 export const ROUTES = ['/', '/how', '/log', '/map', '/leaderboard', '/me', '/stickers', '/about', '/privacy'] as const;
 export type Route = (typeof ROUTES)[number];
 
+// Some routes open another page and scroll to one of its sections.
+// The old links keep working: #/leaderboard is the ranking under the map.
+const PAGE_OF: Partial<Record<Route, Route>> = { '/leaderboard': '/map' };
+const SECTION_OF: Partial<Record<Route, string>> = { '/leaderboard': 'ranking' };
+export const pageOf = (r: Route): Route => PAGE_OF[r] ?? r;
+export const sectionOf = (r: Route): string | undefined => SECTION_OF[r];
+
 function current(): Route {
   const path = window.location.hash.replace(/^#/, '') || '/';
   return (ROUTES as readonly string[]).includes(path) ? (path as Route) : '/';
 }
 
+// The current route. Scrolling and focus after a change are handled in App.
 export function useRoute(): Route {
   const [route, setRoute] = useState<Route>(current);
   useEffect(() => {
-    const on = () => {
-      setRoute(current());
-      window.scrollTo(0, 0);
-    };
+    const on = () => setRoute(current());
     window.addEventListener('hashchange', on);
     return () => window.removeEventListener('hashchange', on);
   }, []);

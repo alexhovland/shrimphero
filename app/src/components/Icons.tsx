@@ -32,11 +32,6 @@ export const IconMap = () => (
     <circle cx="12" cy="9.5" r="2.5" />
   </svg>
 );
-export const IconRank = () => (
-  <svg {...common}>
-    <path d="M4 20V13h4v7M10 20V5h4v15M16 20v-9h4v9" />
-  </svg>
-);
 export const IconMine = () => (
   <svg {...common}>
     <circle cx="12" cy="8" r="4" />

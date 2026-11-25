@@ -1,5 +1,5 @@
 import { useI18n } from '../i18n';
-import { href, type Route } from '../lib/router';
+import { href, pageOf, type Route } from '../lib/router';
 import { NAV } from './nav';
 
 export function TabBar({ route }: { route: Route }) {
@@ -7,7 +7,7 @@ export function TabBar({ route }: { route: Route }) {
   return (
     <nav className="tabbar" aria-label={t('nav.menu')}>
       {NAV.map(({ route: r, label, Icon }) => (
-        <a key={r} href={href(r)} aria-current={route === r ? 'page' : undefined}>
+        <a key={r} href={href(r)} aria-current={pageOf(route) === r ? 'page' : undefined}>
           <Icon />
           <span>{t(label)}</span>
         </a>

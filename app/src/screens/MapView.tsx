@@ -18,6 +18,13 @@ const EUROPE: [[number, number], [number, number]] = [[-10.5, 36], [24.5, 59]];
 const compact = (n: number, lang: string) =>
   new Intl.NumberFormat(lang, { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 
+// Help texts shown when someone scrolls over the map without Ctrl/⌘, or uses one finger on a phone.
+const gestureTexts = (t: (key: string) => string) => ({
+  'CooperativeGesturesHandler.WindowsHelpText': t('map.gesture_windows'),
+  'CooperativeGesturesHandler.MacHelpText': t('map.gesture_mac'),
+  'CooperativeGesturesHandler.MobileHelpText': t('map.gesture_mobile'),
+});
+
 export default function MapView({ rows }: { rows: MapRow[] | null }) {
   const { t, lang } = useI18n();
   const box = useRef<HTMLDivElement>(null);
@@ -41,6 +48,9 @@ export default function MapView({ rows }: { rows: MapRow[] | null }) {
       pitchWithRotate: false,
       touchPitch: false,
       maxZoom: 16,
+      // One finger scrolls the page, two fingers move the map, so the map never traps the page on a phone.
+      cooperativeGestures: true,
+      locale: gestureTexts(textRef.current.t),
     });
     map.touchZoomRotate.disableRotation();
     map.keyboard.disableRotation();
@@ -131,6 +141,19 @@ export default function MapView({ rows }: { rows: MapRow[] | null }) {
       mapRef.current = null;
     };
   }, []);
+
+  // The map writes its gesture help texts once; rewrite them when the language changes.
+  useEffect(() => {
+    const screen = box.current?.querySelector('.maplibregl-cooperative-gesture-screen');
+    if (!screen) return;
+    const texts = gestureTexts(t);
+    // Same test as the map library: ⌘ on a Mac, Ctrl elsewhere.
+    const mac = navigator.platform.indexOf('Mac') === 0;
+    const desktop = screen.querySelector('.maplibregl-desktop-message');
+    const mobile = screen.querySelector('.maplibregl-mobile-message');
+    if (desktop) desktop.textContent = texts[mac ? 'CooperativeGesturesHandler.MacHelpText' : 'CooperativeGesturesHandler.WindowsHelpText'];
+    if (mobile) mobile.textContent = texts['CooperativeGesturesHandler.MobileHelpText'];
+  }, [t, mapReady]);
 
   // Put the store totals on the map once both the map and the data are ready.
   useEffect(() => {
