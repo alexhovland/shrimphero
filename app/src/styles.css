@@ -889,6 +889,70 @@ a:hover {
   border-top: 2px solid var(--ink);
 }
 
+/* Mine: one tiny sticker per sticker logged, then the goals. */
+.progress {
+  margin: var(--s4) 0 var(--s6);
+}
+.sticker-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 var(--s5);
+}
+.mini-sticker {
+  width: 14px;
+  height: 14px;
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  transform: rotate(-6deg);
+}
+.mini-sticker:nth-child(even) {
+  transform: rotate(5deg);
+}
+.sticker-row__more {
+  margin-left: var(--s1);
+  font-family: var(--head);
+  font-weight: 800;
+}
+.goals-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3) var(--s4);
+}
+.goals {
+  display: flex;
+  gap: var(--s2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--muted);
+  border-radius: 50%;
+  color: var(--muted);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+.goal--reached {
+  background: var(--yellow);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.goal-next {
+  margin: 0;
+  font-family: var(--head);
+  font-weight: 700;
+}
+
 /* ---------- Map ---------- */
 
 .map-box {

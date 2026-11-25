@@ -5,6 +5,7 @@ import { formatDate, formatNumber, NICKNAME_PATTERN } from '../lib/format';
 import { href } from '../lib/router';
 import { useSession } from '../lib/session';
 import { storeLine } from '../components/StorePicker';
+import { Progress } from '../components/Progress';
 
 export default function Mine() {
   const { t, lang } = useI18n();
@@ -108,6 +109,7 @@ export default function Mine() {
                 ? t('me.summary', { count: total, total: formatNumber(total, lang), rank: me.rank })
                 : t('me.summary_unranked', { count: total, total: formatNumber(total, lang) })}
             </p>
+            <Progress total={total} />
           </>
         )}
 

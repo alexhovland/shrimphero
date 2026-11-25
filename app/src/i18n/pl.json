@@ -128,6 +128,10 @@
       "other": "{total} naklejki · {rank}. miejsce"
     },
     "summary_unranked": { "one": "{total} naklejka", "few": "{total} naklejki", "many": "{total} naklejek", "other": "{total} naklejki" },
+    "goals_label": "Cele",
+    "goal_reached": "osiągnięty",
+    "goal_next": "Jeszcze {n} do {goal}",
+    "goals_done": "Wszystkie cele osiągnięte. Dziękujemy!",
     "change_nickname": "Zmień pseudonim",
     "save_nickname": "Zapisz pseudonim",
     "nickname_saved": "Pseudonim zapisany.",
