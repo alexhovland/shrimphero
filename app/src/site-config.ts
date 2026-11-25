@@ -17,6 +17,11 @@ export const PETITION_LINKS: Record<string, string> = {
 };
 export const PETITION_DEFAULT = 'https://lidlshrimp.com/';
 
+// Sticker order form (Tally). One link per interface language, or only the default.
+// Leave the default empty to hide ordering and show "Ordering opens soon".
+export const ORDER_FORM_LINKS: Record<string, string> = {};
+export const ORDER_FORM_DEFAULT = '';
+
 // Sticker files in public/stickers. "label" is the language name shown in the picker.
 export const STICKERS = [
   { file: 'sticker-fr.png', code: 'fr', label: 'Français' },

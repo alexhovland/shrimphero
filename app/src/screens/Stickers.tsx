@@ -1,32 +1,40 @@
-import { useState } from 'react';
 import { useI18n } from '../i18n';
-import { STICKERS } from '../site-config';
+import { orderFormFor } from '../lib/order';
 
-// No preview on purpose: the sticker shows a shrimp on ice.
+const STEPS = [1, 2, 3];
+
+// Order stickers: they are posted for free through an outside form (Tally).
+// The site only links to it; nothing about the order is stored here.
+// No sticker image on purpose: the sticker shows a shrimp on ice.
 export default function Stickers() {
   const { t, lang } = useI18n();
-  const [code, setCode] = useState<string>(() => STICKERS.find((s) => s.code === lang)?.code ?? 'en');
-  const sticker = STICKERS.find((s) => s.code === code) ?? STICKERS[0];
-  const url = `${import.meta.env.BASE_URL}stickers/${sticker.file}`;
+  const link = orderFormFor(lang);
 
   return (
     <section className="block block--cream" aria-labelledby="st-title">
       <div className="wrap--form">
         <h1 id="st-title">{t('stickers.title')}</h1>
-        <p>{t('stickers.body')}</p>
-        <div className="field">
-          <label htmlFor="st-lang">{t('stickers.language')}</label>
-          <select id="st-lang" className="select" value={code} onChange={(e) => setCode(e.target.value)}>
-            {STICKERS.map((s) => (
-              <option key={s.code} value={s.code}>{s.label}</option>
-            ))}
-          </select>
-        </div>
-        <a className="btn btn--blue btn--block" href={url} download={`shrimphero-${sticker.file}`}>
-          {t('stickers.download')}
-        </a>
-        <p className="sticker-file">{t('stickers.file')}</p>
-        <p><strong>{t('stickers.where')}</strong></p>
+        <p className="lead">{t('stickers.body')}</p>
+        <ol className="steps order-steps">
+          {STEPS.map((i) => (
+            <li key={i}>
+              <span>{t(`stickers.step${i}`)}</span>
+            </li>
+          ))}
+        </ol>
+        <p className="promise">{t('stickers.promise')}</p>
+        {link ? (
+          <>
+            <a className="btn btn--yellow btn--block btn--main" href={link} target="_blank" rel="noopener noreferrer">
+              {t('stickers.order')}
+              <span className="sr-only"> {t('common.new_tab')}</span>
+            </a>
+            <p className="hint">{t('stickers.tally_note')}</p>
+          </>
+        ) : (
+          <p className="order-soon">{t('stickers.soon')}</p>
+        )}
+        <p className="where"><strong>{t('stickers.where')}</strong></p>
       </div>
     </section>
   );

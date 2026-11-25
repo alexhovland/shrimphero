@@ -1106,10 +1106,28 @@ a:hover {
   margin: var(--s6) 0 0;
   font-weight: 700;
 }
-.sticker-file {
-  margin-top: var(--s2);
-  font-size: 15px;
+/* ---------- Order stickers ---------- */
+
+.order-steps {
+  margin: var(--s6) 0;
+}
+.promise {
+  font-weight: 700;
+}
+/* Yellow on cream needs an edge to read as a button. */
+.block--cream .btn--yellow {
+  border-color: var(--ink);
+}
+.order-soon {
+  padding: var(--s4);
+  border: 2px dashed var(--muted);
   color: var(--muted);
+  font-family: var(--head);
+  font-weight: 700;
+  text-align: center;
+}
+.where {
+  margin-top: var(--s8);
 }
 .block.map-credit {
   padding-top: var(--s2);
