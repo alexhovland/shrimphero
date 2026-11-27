@@ -26,7 +26,6 @@ export default function HowItWorks() {
     <section className="block block--cream prose" aria-labelledby="how-page-title">
       <div className="wrap">
         <h1 id="how-page-title">{t('how.title')}</h1>
-        <p className="lead">{t('how.lead')}</p>
 
         <h2>{t('how.why_title')}</h2>
         <p>{t('how.why_body')}</p>
