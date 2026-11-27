@@ -13,7 +13,7 @@ function contentSecurityPolicy(env: Record<string, string>): Plugin {
     "img-src 'self' data: blob: https://axelhovner.goatcounter.com",
     "font-src 'self'",
     `connect-src 'self' ${supabase} https://tiles.openfreemap.org https://axelhovner.goatcounter.com`,
-    'frame-src https://challenges.cloudflare.com',
+    'frame-src https://challenges.cloudflare.com https://tally.so',
     "worker-src 'self' blob:",
     "child-src 'self' blob:",
     "object-src 'none'",

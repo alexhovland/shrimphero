@@ -17,10 +17,11 @@ export const PETITION_LINKS: Record<string, string> = {
 };
 export const PETITION_DEFAULT = 'https://lidlshrimp.com/';
 
-// Sticker order form (Tally). One link per interface language, or only the default.
+// Sticker order form on Tally: the form id from its link (tally.so/r/<id>).
+// One id per interface language if translated copies exist later, otherwise the default.
 // Leave the default empty to hide ordering and show "Ordering opens soon".
-export const ORDER_FORM_LINKS: Record<string, string> = {};
-export const ORDER_FORM_DEFAULT = '';
+export const ORDER_FORM_IDS: Record<string, string> = {};
+export const ORDER_FORM_ID_DEFAULT = 'EqWdEr';
 
 export const SOURCES = {
   europe: 'https://rethinkpriorities.org/research-area/estimating-the-number-of-shrimp-in-major-european-markets/',

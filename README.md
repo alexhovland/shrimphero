@@ -14,7 +14,7 @@ The step-by-step launch guide is in [LAUNCH-GUIDE.md](LAUNCH-GUIDE.md). This fil
 | `app/src/site-config.ts` | **Edit before launch.** Contact email, optional postal address, host, petition links, sticker list. |
 | `app/src/i18n/` | All interface text, one file per language (en, fr, de, it, pl, es). |
 | `app/src/assets/mascot.svg` | The shrimp mascot. Currently a placeholder drawing (see below). |
-| Sticker orders | People order stickers through an outside form (Tally) that the Get stickers page links to. The site never sees an address. Set the link in `app/src/site-config.ts`: `ORDER_FORM_LINKS` (one per language) or `ORDER_FORM_DEFAULT`; leave both empty to show "Ordering opens soon". |
+| Sticker orders | People order stickers through the campaign team's form on Tally, shown on the Get stickers page after a tap (with a new-tab link as a backup). The site never sees what is typed in it. Set the form id (from `tally.so/r/<id>`) in `app/src/site-config.ts`: `ORDER_FORM_IDS` (one per language) or `ORDER_FORM_ID_DEFAULT`; leave both empty to show "Ordering opens soon". |
 | `app/tests/` | Automatic browser tests and a fake database used only by those tests. |
 | `supabase/migrations/` | The database, in six numbered SQL files. Paste them into Supabase in order. |
 | `supabase/tests/security.sql` | A check that tries to break every database rule. Must print "all checks passed". |

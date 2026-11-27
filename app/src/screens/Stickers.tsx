@@ -1,14 +1,16 @@
 import { useI18n } from '../i18n';
 import { orderFormFor } from '../lib/order';
+import { OrderForm } from '../components/OrderForm';
 
 const STEPS = [1, 2, 3];
 
-// Order stickers: they are posted for free through an outside form (Tally).
-// The site only links to it; nothing about the order is stored here.
+// Order stickers: they are posted for free. People order them through the campaign
+// team's form on Tally, shown on this page after a tap (or opened in a new tab).
+// Nothing typed in the form reaches this site.
 // No sticker image on purpose: the sticker shows a shrimp on ice.
 export default function Stickers() {
   const { t, lang } = useI18n();
-  const link = orderFormFor(lang);
+  const form = orderFormFor(lang);
 
   return (
     <section className="block block--cream" aria-labelledby="st-title">
@@ -23,17 +25,7 @@ export default function Stickers() {
           ))}
         </ol>
         <p className="promise">{t('stickers.promise')}</p>
-        {link ? (
-          <>
-            <a className="btn btn--yellow btn--block btn--main" href={link} target="_blank" rel="noopener noreferrer">
-              {t('stickers.order')}
-              <span className="sr-only"> {t('common.new_tab')}</span>
-            </a>
-            <p className="hint">{t('stickers.tally_note')}</p>
-          </>
-        ) : (
-          <p className="order-soon">{t('stickers.soon')}</p>
-        )}
+        {form ? <OrderForm form={form} /> : <p className="order-soon">{t('stickers.soon')}</p>}
         <p className="where"><strong>{t('stickers.where')}</strong></p>
       </div>
     </section>
