@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "mock": "node tests/mock-server.mjs",
     "test:e2e": "playwright test --trace off",
-    "size": "node scripts/check-size.mjs"
+    "size": "node scripts/check-size.mjs",
+    "check:form": "node scripts/check-order-form.mjs"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",

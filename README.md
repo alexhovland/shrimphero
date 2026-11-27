@@ -23,6 +23,7 @@ The step-by-step launch guide is in [LAUNCH-GUIDE.md](LAUNCH-GUIDE.md). This fil
 | `scripts/fetch-stores.mjs` | Downloads Lidl stores from OpenStreetMap and writes `stores.csv`. |
 | `scripts/clean-svg.mjs` | Cleans an SVG (removes metadata and editor data) before you add it to the site. |
 | `app/scripts/share-images.mjs` | Renders the sharing preview (`app/public/og.png`) and the phone home-screen icon (`app/public/apple-touch-icon.png`) from the site's font and mascot. |
+| `app/scripts/check-order-form.mjs` | `npm run check:form` (in `app/`) opens the live Order stickers page in Chromium and WebKit, opens the form without typing or sending anything, and fails if the form's frame does not fit the form. Run it after any change to the form in Tally. |
 | `.github/workflows/` | Two automatic jobs on GitHub: publish the site, and refresh the store list. |
 | `SETUP/` | Visible copies of the two workflow files, because web uploads often skip hidden folders. |
 | `screenshots/` (next to this folder in the zip) | Every screen at 390 px and 1280 px wide, made with test data. |
@@ -119,4 +120,4 @@ Local development with a real project: create `app/.env.local` with `VITE_SUPABA
 
 ## Licences
 
-Code: MIT (see `LICENSE`). Font: Bricolage Grotesque, SIL Open Font License 1.1, bundled through Fontsource. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Town and village names: © GeoNames, CC BY 4.0; the credit appears on the Log screen. Sticker images and campaign texts belong to the campaign.
+Code: MIT (see `LICENSE`). Font: Bricolage Grotesque, SIL Open Font License 1.1, bundled through Fontsource. Order form height: iframe-resizer 4.4.5 (MIT), loaded only when the form is opened. Map: MapLibre GL JS (BSD), tiles by OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors. Store data: © OpenStreetMap contributors, Open Database License; the credit appears on the Log screen, the Map screen and in the footer. Town and village names: © GeoNames, CC BY 4.0; the credit appears on the Log screen. Sticker images and campaign texts belong to the campaign.
