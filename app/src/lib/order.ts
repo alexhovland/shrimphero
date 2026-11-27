@@ -24,9 +24,9 @@ export function orderFormFor(lang: string): OrderForm | null {
   if (!VALID_ID.test(id)) return null;
 
   const embed = new URL(`/embed/${id}`, TALLY_ORIGIN);
-  // No dynamicHeight: without Tally's own script the form does not report its height,
-  // so the page gives the iframe a fixed height (see .order-iframe in styles.css).
-  embed.search = new URLSearchParams({ alignLeft: '1', hideTitle: '1', transparentBackground: '1' }).toString();
+  // dynamicHeight=1: the form reports its height once the page starts its resizer
+  // (iframe-resizer, see components/OrderForm.tsx), so the frame fits the form exactly.
+  embed.search = new URLSearchParams({ alignLeft: '1', hideTitle: '1', transparentBackground: '1', dynamicHeight: '1' }).toString();
   const share = new URL(`/r/${id}`, TALLY_ORIGIN);
   return { embed: embed.toString(), share: share.toString() };
 }

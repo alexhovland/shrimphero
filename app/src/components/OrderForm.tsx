@@ -53,6 +53,44 @@ export function OrderForm({ form }: { form: Form }) {
     };
   }, [open]);
 
+  // Make the frame follow the form's own height. The form (Tally) runs the child part of
+  // iframe-resizer and waits for a parent to start it; the parent part (iframe-resizer
+  // 4.4.5, MIT) is downloaded only now, after the tap. Until the first height arrives the
+  // frame keeps its fallback height (see .order-iframe) and can scroll inside.
+  useEffect(() => {
+    const iframe = frame.current;
+    if (!open || !iframe) return;
+    let stopped = false;
+    import('iframe-resizer/js/iframeResizer')
+      .then(({ default: iframeResize }) => {
+        if (stopped) return;
+        iframeResize(
+          {
+            checkOrigin: [TALLY_ORIGIN],
+            // 'omit', not false: keep inner scrolling until a height arrives (set below).
+            scrolling: 'omit',
+            log: false,
+            warningTimeout: 0,
+            heightCalculationMethod: 'auto', // what Tally's own embed uses
+            minHeight: 300,
+            maxHeight: 6000,
+            onResized: ({ height }) => {
+              iframe.setAttribute('scrolling', 'no');
+              iframe.dataset.formHeight = String(Math.round(Number(height))); // read by scripts/check-order-form.mjs
+            },
+          },
+          iframe,
+        );
+      })
+      .catch(() => {
+        /* the fallback height stays */
+      });
+    return () => {
+      stopped = true;
+      iframe.iFrameResizer?.removeListeners(); // close() would also remove the iframe
+    };
+  }, [open]);
+
   const start = () => {
     setOpen(true);
     countEvent('order-form-opened');
@@ -97,7 +135,7 @@ export function OrderForm({ form }: { form: Form }) {
           {!loaded && failed && <p className="error" role="alert">{newTab(t('stickers.form_failed'))}</p>}
           <iframe
             ref={frame}
-            className={sent ? 'order-iframe order-iframe--sent' : 'order-iframe'}
+            className="order-iframe"
             src={form.embed}
             title={t('stickers.form_frame_title')}
             width="100%"

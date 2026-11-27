@@ -1345,34 +1345,17 @@ a:hover {
 .order-frame:focus {
   outline: none;
 }
-/* Without Tally's own script the form cannot report its height, so the frame gets a
-   fixed height that fits the whole form at each width, with room for the two
-   "Other" fields and error messages (measured: 2,739 to 3,225 px of form). */
+/* The frame follows the form's own height (set by iframe-resizer, see OrderForm.tsx).
+   Until a height arrives it uses this fallback and scrolls inside.
+   Rule: never give the frame a fixed height taller than the screen; only a height
+   reported by the form may be taller. That is what keeps empty space from appearing
+   under the form. */
 .order-iframe {
   display: block;
   width: 100%;
-  height: 3500px;
+  height: min(80vh, 760px);
   border: 0;
   background: transparent;
-}
-@media (min-width: 360px) {
-  .order-iframe {
-    height: 3400px;
-  }
-}
-@media (min-width: 430px) {
-  .order-iframe {
-    height: 3250px;
-  }
-}
-@media (min-width: 768px) {
-  .order-iframe {
-    height: 3050px;
-  }
-}
-/* After sending, Tally shows only a short thank-you. */
-.order-iframe.order-iframe--sent {
-  height: 520px;
 }
 .order-sent {
   margin: var(--s4) 0 0;

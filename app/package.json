@@ -16,6 +16,7 @@
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",
     "@supabase/supabase-js": "^2.119.2",
+    "iframe-resizer": "4.4.5",
     "maplibre-gl": "^6.19.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
