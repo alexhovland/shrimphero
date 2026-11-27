@@ -61,6 +61,14 @@ export function OrderForm({ form }: { form: Form }) {
     const iframe = frame.current;
     if (!open || !iframe) return;
     let stopped = false;
+    // iframe-resizer checks where a height message comes from (tally.so) but not which
+    // window sent it. This listener runs first (capture) and drops any resizer message
+    // that is not from our own form, so no other page or frame can set its height.
+    const onlyOurForm = (e: MessageEvent) => {
+      const fromResizer = typeof e.data === 'string' && e.data.startsWith('[iFrameSizer]');
+      if (fromResizer && (e.origin !== TALLY_ORIGIN || e.source !== iframe.contentWindow)) e.stopImmediatePropagation();
+    };
+    window.addEventListener('message', onlyOurForm, true);
     import('iframe-resizer/js/iframeResizer')
       .then(({ default: iframeResize }) => {
         if (stopped) return;
@@ -87,6 +95,7 @@ export function OrderForm({ form }: { form: Form }) {
       });
     return () => {
       stopped = true;
+      window.removeEventListener('message', onlyOurForm, true);
       iframe.iFrameResizer?.removeListeners(); // close() would also remove the iframe
     };
   }, [open]);
