@@ -1,6 +1,8 @@
 import type { Page } from '@playwright/test';
 
-// Cloudflare Turnstile and OpenFreeMap are replaced by stand-ins in tests.
+// Cloudflare Turnstile, OpenFreeMap and the Tally order form are replaced by stand-ins
+// in tests, so nothing reaches them (and no order is ever sent).
+const TALLY_STUB = '<!doctype html><html lang="en"><title>Order form</title><body><p>Test form</p></body></html>';
 const TURNSTILE_STUB = `window.turnstile = {
   render: function (el, o) { setTimeout(function () { o.callback('test-token'); }, 50); return 'w1'; },
   reset: function () {}, remove: function () {}
@@ -18,6 +20,7 @@ export async function stubOutside(page: Page) {
   await page.route('https://tiles.openfreemap.org/**', (r) =>
     r.fulfill({ contentType: 'application/json', body: JSON.stringify(MAP_STYLE) }),
   );
+  await page.route('https://tally.so/**', (r) => r.fulfill({ contentType: 'text/html', body: TALLY_STUB }));
 }
 
 // Collects Content-Security-Policy violations reported by the browser.
